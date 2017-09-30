@@ -132,3 +132,9 @@ Started GET "/" for ::1 at 2017-09-29 18:21:29 -0500
 Processing by HomePageController#index as HTML
   Rendered home_page/index.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-09-29 19:28:41 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
