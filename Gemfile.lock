@@ -42,6 +42,9 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
+    bootstrap-sass-rails (2.2.2.1)
+      railties (>= 3.1.0)
+      sass-rails (>= 3.1.0)
     builder (3.2.3)
     byebug (9.1.0)
     coffee-rails (4.1.1)
@@ -177,6 +180,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.1.1.0)
+  bootstrap-sass-rails (~> 2.2.2.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 3.5.10)

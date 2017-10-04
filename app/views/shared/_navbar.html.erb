@@ -14,11 +14,18 @@
         </span>
 
         <span class="navbar-text nav navbar-nav navbar-right">
+           <% if !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "bg-primary text-white"%>
+           <%end%> 
         </span>
 
          <span class="navbar-text nav navbar-nav navbar-right">
-            <%= link_to "Sign Up", new_user_registration_path, class: "bg-primary text-white"%>
+            <% if user_signed_in? %>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "bg-primary text-white"%>
+            <%else%>
+                <%= link_to "Sign Up", new_user_registration_path, class: "bg-primary text-white"%>
+            <%end%>
+           
         </span>
 
 
