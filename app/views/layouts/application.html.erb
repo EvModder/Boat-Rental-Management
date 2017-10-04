@@ -8,9 +8,20 @@
 </head>
 <body>
 
-<%= render partial: "shared/navbar"%>
+<%# <%= image_tag("ocean.jpg")%> 
 
-<%= yield %>
+    
+<div class="background_image">
+    
+
+  <%= render partial: "shared/navbar"%>
+
+  <div class="container">
+    <% if notice %> <div class="alert alert-info"><%= notice %></div><%end%>
+    <% if alert %><div class="alert alert-warning"><%= alert %></div><%end%>
+  </div>
+  <%= yield %>
+</div>
 
 </body>
 </html>
