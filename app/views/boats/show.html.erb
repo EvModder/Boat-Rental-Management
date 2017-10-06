@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @boat.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @boat.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @boat.image.url,:height => "300" %>
+</p>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %> |
+<%= link_to 'Back', boats_path %>

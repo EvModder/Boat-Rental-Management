@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :boats
+  resources :boats
   devise_for :users
   get 'home_page/index'
 
