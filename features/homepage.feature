@@ -12,14 +12,6 @@ Then the user should see the sign up link
 Scenario: User sees the login link
 Then the user should see the Login link
 
-Scenario: User clicks the Sign up link
-When the user click the Sign Up link
-Then the user should see the sign pop
-
-Scenario: User logged in
-When the user click the Login link
-Then the user should see logout link
-
 Scenario: User signs up with valid data
 When the user sign up valid user data
 Then the user should see a successful sign up message
@@ -39,6 +31,8 @@ Then the user should see a missing password confirmation message
 Scenario: User signs up with mismatched password and confirmation
 When the user sign up with a mismatched password confirmation
 Then the user should see a invalid password message
+
+
 
 
 
