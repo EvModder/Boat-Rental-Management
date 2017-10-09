@@ -3892,3 +3892,670 @@ Processing by BoatsController#index as HTML
   Rendered boats/index.html.erb within layouts/application (3.6ms)
   Rendered shared/_navbar.html.erb (0.5ms)
 Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-06 09:32:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (7.9ms)
+Completed 200 OK in 1007ms (Views: 984.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-06 09:32:38 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.5ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (19.2ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 80.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-06 09:32:47 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-06 09:34:59 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (94.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 138.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-06 09:35:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-06 09:35:04 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (7.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBoat Load (2.1ms)[0m  SELECT "boats".* FROM "boats"
+
+
+Started GET "/" for ::1 at 2017-10-09 09:30:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (9.6ms)
+Completed 200 OK in 3439ms (Views: 3420.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-54ab6e4b6dc3ef12638190b7da547532d0cdb62163eb8f3149f0793922e3a8c9.css?body=1" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/assets/home_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/assets/jquery.slick.self-96d384ee82b872f06bfd1de14b197c64f1cb7c51ce078246bbf0f3bd5cb54057.js?body=1" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/assets/sea-ced0b7e92c7a1cd981de207e1f86b4e87a98a19c5f08b8547310544b05b5a093.jpg" for ::1 at 2017-10-09 09:30:38 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:30:58 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (92.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 150ms (Views: 139.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:37:58 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..4)):
+    4: <%= devise_error_messages! %>
+    5: 
+    6: 
+    7:     <%= label "Day" %>
+    8:     <%= check_box "Monday", "yes" %>
+    9: 
+   10:     <div class="form-group">
+  app/views/devise/registrations/new.html.erb:7:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273008503060'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273008503060'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.1ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 09:41:42 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:41:45 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:42:52 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:43:09 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `lender_or_borrower' for #<User:0x007fd370eb61a8>):
+    4: <%= devise_error_messages! %>
+    5: 
+    6: 
+    7:     <%= f.radio_button(:lender_or_borrower, :lender) %>
+    8: 
+    9:     <div class="form-group">
+   10:     <%= f.label :email, class: "col-sm-2 control-label" %>
+  app/views/devise/registrations/new.html.erb:7:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273010859040'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273010859040'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:43:22 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    4: <%= devise_error_messages! %>
+    5: 
+    6: 
+    7:     <%= f.radio_button( :lender) %>
+    8: 
+    9:     <div class="form-group">
+   10:     <%= f.label :email, class: "col-sm-2 control-label" %>
+  app/views/devise/registrations/new.html.erb:7:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273047193420'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273047193420'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 09:44:52 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:44:55 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `autolyse' for #<User:0x007fd371edd798>):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button :autolyse, true %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button :autolyse, false, :checked => true %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273063139780'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273063139780'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.8ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:46:12 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `autolyse' for #<User:0x007fd372138768>):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button :autolyse, true %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button :autolyse, false, :checked => true %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273063139780'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273063139780'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:51:22 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2..3)):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button  %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button  %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273051204840'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273051204840'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:51:45 -0500
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/controllers/application_controller.rb:5: syntax error, unexpected tSYMBEG
+  def :autolyse
+       ^
+/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/controllers/application_controller.rb:8: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/application_controller.rb:5: syntax error, unexpected tSYMBEG
+  app/controllers/application_controller.rb:8: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:51:55 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `autolyse' for #<User:0x007fd3720a2240>):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button :autolyse, true %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button :autolyse, false, :checked => true %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 09:54:46 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `autolyse' for #<User:0x007fd36bc80a50>):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button :autolyse, true %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button :autolyse, false, :checked => true %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.5ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:11:10 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `autolyse' for #<User:0x007fd370f4bac8>):
+     7:     <div class="field">
+     8:       <%= f.label :autolyse %><br />
+     9:       <%= f.label :autolyse, "Yes", :value => "true"  %>
+    10:       <%= f.radio_button :autolyse, true %>
+    11:       <%= f.label :autolyse, "No", :value => "false" %>
+    12:       <%= f.radio_button :autolyse, false, :checked => true %>
+    13:     </div>
+  app/views/devise/registrations/new.html.erb:10:in `block in _app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2357094252129828951_70273062138280'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.8ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:12:22 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:16:44 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 164ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:17:08 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:18:43 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected keyword_class, expecting ')'
+... Owner", :value => "true" class: "col-sm-2 control-label" );...
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/views/devise/registrations/new.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+...ptain", :value => "false" class: "col-sm-2 control-label");@...
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_class, expecting ')'
+...lient", :value => "false" class: "col-sm-2 control-label");@...
+...                               ^):
+  app/views/devise/registrations/new.html.erb:9: syntax error, unexpected keyword_class, expecting ')'
+  app/views/devise/registrations/new.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+  app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:19:01 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:19:29 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:19:54 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:19:57 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:21:14 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-09 10:21:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 10:57:52 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-09 11:14:42 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 49.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 11:14:44 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 11:14:45 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.2ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (11.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 57.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 11:14:51 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 11:17:40 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 11:17:41 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.4ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 11:17:43 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 12:12:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.8ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (18.4ms)
+  Rendered shared/_navbar.html.erb (6.9ms)
+Completed 200 OK in 1266ms (Views: 1234.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 12:12:50 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 12:12:51 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-10-09 12:13:03 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered boats/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 12:34:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.5ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (18.1ms)
+  Rendered shared/_navbar.html.erb (17.6ms)
+Completed 200 OK in 1213ms (Views: 1182.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 13:10:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (4.9ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (19.8ms)
+  Rendered shared/_navbar.html.erb (6.3ms)
+Completed 200 OK in 589ms (Views: 565.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-09 13:22:17 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (105.2ms)
+  Rendered boats/new.html.erb within layouts/application (110.2ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 208ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-09 13:23:27 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.1ms)
+  Rendered boats/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-10-09 13:23:31 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered boats/show.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 103ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/2/edit" for ::1 at 2017-10-09 13:23:36 -0500
+Processing by BoatsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered boats/_form.html.erb (5.0ms)
+  Rendered boats/edit.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 54.1ms | ActiveRecord: 0.2ms)

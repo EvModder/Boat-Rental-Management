@@ -41,6 +41,9 @@ gem 'pundit'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 
+#for viewing pictures
+gem "jquery-slick-rails"
+
 
 
 group :development, :test do
@@ -57,6 +60,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem "bootstrap-sass-rails", "~> 2.2.2.0"
+gem 'rspec'
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
 
 end
 
