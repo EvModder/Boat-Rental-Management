@@ -4575,3 +4575,49 @@ Processing by HomePageController#index as HTML
   Rendered home_page/index.html.erb within layouts/application (0.6ms)
   Rendered shared/_navbar.html.erb (0.6ms)
 Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 18:37:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (6.1ms)
+Completed 200 OK in 1182ms (Views: 1167.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 18:37:15 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 18:37:16 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.7ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (14.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 59.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 18:37:17 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 18:37:19 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 18:37:22 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
