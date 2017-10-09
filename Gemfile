@@ -6,9 +6,7 @@ gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 # sqlite 3 not working on heroku
 #gem 'sqlite3'
-group :production do
-  gem "pg"
-end
+gem "pg"
 
 group :development, :test do
   gem "sqlite3"
