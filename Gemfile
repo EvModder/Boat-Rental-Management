@@ -56,4 +56,12 @@ group :development do
 end
 
 
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'capybara'
+  gem 'database_cleaner'
+end
+
+
 
