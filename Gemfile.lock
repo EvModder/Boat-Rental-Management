@@ -137,6 +137,7 @@ GEM
     minitest (5.10.3)
     multi_json (1.12.2)
     multi_test (0.1.2)
+    mysql2 (0.4.9)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
@@ -215,7 +216,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.13)
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -253,6 +253,7 @@ DEPENDENCIES
   jquery-rails
   jquery-slick-rails
   mini_magick (~> 4.3)
+  mysql2
   pundit
   rails (= 4.2.6)
   rails_layout
@@ -260,7 +261,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
-  sqlite3
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
