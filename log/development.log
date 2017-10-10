@@ -4796,3 +4796,33 @@ Processing by BoatsController#index as HTML
   Rendered boats/index.html.erb within layouts/application (5.2ms)
   Rendered shared/_navbar.html.erb (0.5ms)
 Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 20:12:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (9.6ms)
+Completed 200 OK in 1159ms (Views: 1143.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 20:13:00 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-09 20:13:01 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-09 20:13:02 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.2ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (15.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 66.6ms | ActiveRecord: 2.8ms)
