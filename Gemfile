@@ -37,10 +37,14 @@ gem 'devise_roles'
 gem 'bootstrap-sass', '~> 3.1.1.0'
 gem 'pundit'
 
+#for uploading pictures
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
+
+
 
 group :development, :test do
   gem 'rails_layout'
-
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   
@@ -53,6 +57,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem "bootstrap-sass-rails", "~> 2.2.2.0"
+
 end
 
 
