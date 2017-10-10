@@ -144,7 +144,7 @@ end
   end
   
   Then (/^I should see a signed out message$/) do
-    expect(page).to have_content "Signed out successfully."
+    expect(page).to have_content "Signed out successfully"
   end
   
   Then (/^the user should see a invalid password message$/) do
