@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 Given(/^the user is on the homepage$/) do
     visit root_path
   end
