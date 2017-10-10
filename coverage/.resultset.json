@@ -1,32 +1,43 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/skgill/Documents/Texas A&M/Fall17/CSCE606/Project/boat-rental-management/app/controllers/home_page_controller.rb": [
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/features/steps_definitions/boat_steps.rb": [
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/controllers/home_page_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/skgill/Documents/Texas A&M/Fall17/CSCE606/Project/boat-rental-management/app/controllers/application_controller.rb": [
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/skgill/Documents/Texas A&M/Fall17/CSCE606/Project/boat-rental-management/app/helpers/application_helper.rb": [
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/skgill/Documents/Texas A&M/Fall17/CSCE606/Project/boat-rental-management/app/helpers/boats_helper.rb": [
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/helpers/boats_helper.rb": [
         1,
         null
       ],
-      "/Users/skgill/Documents/Texas A&M/Fall17/CSCE606/Project/boat-rental-management/app/helpers/home_page_helper.rb": [
+      "/Users/zaoyuanchang/RubymineProjects/SE_iter1/boat-rental-management/app/helpers/home_page_helper.rb": [
         1,
         null
       ]
     },
-    "timestamp": 1507600983
+    "timestamp": 1507606629
   }
 }
