@@ -35,3 +35,7 @@ production:
   <<: *default
   database: production_db
 
+  database: db/production.sqlite3
+
+cucumber:
+  <<: *test
