@@ -10,11 +10,13 @@ class BoatsController < ApplicationController
   # GET /boats/1
   # GET /boats/1.json
   def show
+    @boat_attachments = @boat.boat_attachments.all
   end
 
   # GET /boats/new
   def new
     @boat = Boat.new
+    @boat_attachment = @boat.boat_attachments.build
   end
 
   # GET /boats/1/edit
@@ -28,6 +30,9 @@ class BoatsController < ApplicationController
 
     respond_to do |format|
       if @boat.save
+        params[:boat_attachments]['image'].each do |a|
+          @boat_attachment = @boat.boat_attachments.create!(:image => a)
+        end
         format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
         format.json { render :show, status: :created, location: @boat }
       else
@@ -69,6 +74,6 @@ class BoatsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def boat_params
-      params.require(:boat).permit(:name, :description, :image)
+      params.require(:boat).permit(:name, :description, boat_attachments_attributes: [:id, :boat_id, :image])
     end
 end

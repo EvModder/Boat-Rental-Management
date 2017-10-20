@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Boat Attachments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Boat</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boat_attachments.each do |boat_attachment| %>
+      <tr>
+        <td><%= boat_attachment.boat_id %></td>
+        <td><%= boat_attachment.image %></td>
+        <td><%= link_to 'Show', boat_attachment %></td>
+        <td><%= link_to 'Edit', edit_boat_attachment_path(boat_attachment) %></td>
+        <td><%= link_to 'Destroy', boat_attachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat attachment', new_boat_attachment_path %>

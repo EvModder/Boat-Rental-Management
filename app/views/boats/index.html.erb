@@ -15,14 +15,17 @@
   <tbody>
     <% @boats.each do |boat| %>
       <tr>
-        <td><%= boat.name %></td><tb>
+        <td><%= boat.name %></td>
         <td><%= boat.description %></td>
-        <td><%= image_tag boat.image.thumb.url %></td>
+        <td><%= image_tag boat.boat_attachments[0].image.thumb.url %></td>
         <td><%= link_to 'Details', boat %></td>
         <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
         <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+    <p>
+
+    </p>
   </tbody>
 </table>
 

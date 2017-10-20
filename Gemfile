@@ -52,6 +52,8 @@ gem "jquery-slick-rails"
 
 
 
+
+
 group :development, :test do
   gem 'rails_layout'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
