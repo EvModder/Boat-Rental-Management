@@ -10,11 +10,12 @@
   <%= @boat.description %>
 </p>
 
-<p>
-<% @boat_attachments.each do |p| %>
-    <%= image_tag p.image_url, :height => 300 %>
-<% end %>
-</p>
+
+<ul class="bxslider">
+  <% @boat_attachments.each do |p| %>
+      <%= image_tag p.image_url %>
+  <% end %>
+</ul>
 
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
 <%= link_to 'Back', boats_path %>

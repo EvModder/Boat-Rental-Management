@@ -50,6 +50,10 @@ gem 'mini_magick', '~> 4.3'
 #for viewing pictures
 gem "jquery-slick-rails"
 
+#for pictures sliding https://github.com/manfe/bxslider-rails
+gem 'bxslider-rails'
+
+
 
 
 

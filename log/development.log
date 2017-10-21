@@ -7337,3 +7337,389 @@ Processing by BoatsController#index as HTML
   Rendered boats/index.html.erb within layouts/application (3.2ms)
   Rendered shared/_navbar.html.erb (0.6ms)
 Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:49:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (2.4ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 3.1ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/boats/show.html.erb:15: syntax error, unexpected =>
+...e_url, :height => 300, class => bxslider );@output_buffer.sa...
+...                               ^):
+  app/views/boats/show.html.erb:15: syntax error, unexpected =>
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (110.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (204.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-20 23:49:13 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (7.8ms)
+Completed 200 OK in 3587ms (Views: 3584.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:50:24 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (2.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 142.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-1cb5cd4f5367391b67da4a92f27b63677437cc14ba42f0b0105dee860d975ad7.css?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/bxslider.self-997601a76d44d758acea5230312e0c6dde1420c198eb5a2dc27f8bbe8b44cf8c.css?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/jquery.bxslider.self-378be78e3ae2ebfc909b86a0b3aea51858c2a394b967a6abafacb3d1fabeb8fd.js?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/jquery.fitvids.self-0caa1c3cf6099ad75621d7021e543202502128d712d830ae831528e2a7460237.js?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/assets/bxslider.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2017-10-20 23:50:24 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:51:10 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:51:44 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-20 23:51:50 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:52:11 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:53:40 -0500
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+    $(document).ready(function(){
+     ^):
+  app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+  app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:54:16 -0500
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+    $(document).ready ->
+     ^):
+  app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+  app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.6ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-20 23:59:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+    $(document).ready ->
+     ^):
+  app/controllers/boats_controller.rb:13: `$(' is not allowed as a global variable name
+  app/controllers/boats_controller.rb:13: syntax error, unexpected end-of-input
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (111.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (201.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:00:08 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (2.4ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (5.0ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (14.7ms)
+  Rendered shared/_navbar.html.erb (8.8ms)
+Completed 200 OK in 1435ms (Views: 1325.9ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/boats.self-7392ba271c8ebc2015dcac14b8b6fa62e82c190bc86fb9f06046fdeb26eb9ef1.js?body=1" for ::1 at 2017-10-21 00:00:10 -0500
+
+
+Started GET "/assets/bx_loader-6d46e2cf165a5a0584afba7bc9663da292ee08c97cfc7613de6013ed05be892a.gif" for ::1 at 2017-10-21 00:00:10 -0500
+
+
+Started GET "/assets/controls-257206c4fd6bcee36927eb0ef2ba087b5dfc6c9a18df7f8553878bf847616226.png" for ::1 at 2017-10-21 00:00:10 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:03:21 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 226ms (Views: 221.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:06:32 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/boats/show.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ts[1].image_url, style: 'height:50%;width:auto);@output_buff...
+...                               ^):
+  app/views/boats/show.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:07:18 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered boats/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/boats/show.html.erb:20: syntax error, unexpected ')'
+...[0].image_url, :height => 50% );@output_buffer.safe_append='
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/boats/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/boats/show.html.erb:29: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/boats/show.html.erb:20: syntax error, unexpected ')'
+  app/views/boats/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/boats/show.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.6ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:09:38 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:10:19 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:11:04 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:11:31 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:11:47 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:12:27 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:12:39 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:12:48 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:13:22 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:13:56 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:19:04 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 420ms (Views: 417.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/boats.self-9b29acd37de7a7704cc750437ae82f639258f60ddea4a93c8d5c29c3743a2dc0.js?body=1" for ::1 at 2017-10-21 00:19:05 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 00:19:08 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.2ms)
