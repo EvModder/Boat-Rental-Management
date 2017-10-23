@@ -27,7 +27,7 @@ class BoatsController < ApplicationController
   # POST /boats.json
   def create
     @boat = Boat.new(boat_params)
-
+    @boat.ownerid = current_user.id
     respond_to do |format|
       if @boat.save
         params[:boat_attachments]['image'].each do |a|
@@ -74,6 +74,6 @@ class BoatsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def boat_params
-      params.require(:boat).permit(:name, :description, boat_attachments_attributes: [:id, :boat_id, :image])
+      params.require(:boat).permit(:ownerid, :name, :description, :available_date, :price, :location, boat_attachments_attributes: [:id, :boat_id, :image])
     end
 end

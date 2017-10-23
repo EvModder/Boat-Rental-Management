@@ -19,6 +19,28 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+  <%= f.hidden_field :ownerid%>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_area :location %>
+  </div>
+
+  <div>
+    <%= f.label :available_date %><br>
+    <input type="text" class="datepicker" size="150" id="boat_available_date" name="boat[available_date]">
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.datepicker').datepicker({multidate: true});
+        });
+    </script>
+  </div>
+
+
 
   <%= f.fields_for :boat_attachments do |p| %>
     <div class="field">

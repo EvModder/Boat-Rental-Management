@@ -2,5 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on 'turbolinks:load', ->
-  $(".bxslider").bxSlider(slideWidth: 600, mode: 'fade',adaptiveHeight: true)
+  $(".bxslider").bxSlider(slideWidth: 500, mode: 'fade',adaptiveHeight: true)
 
+#slideWidth: 600

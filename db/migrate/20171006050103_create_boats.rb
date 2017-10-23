@@ -4,6 +4,7 @@ class CreateBoats < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.string :image
+      t.text :available_date
 
       t.timestamps null: false
     end

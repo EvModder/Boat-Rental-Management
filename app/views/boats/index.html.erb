@@ -19,8 +19,10 @@
         <td><%= boat.description %></td>
         <td><%= image_tag boat.boat_attachments[0].image.thumb.url %></td>
         <td><%= link_to 'Details', boat %></td>
+        <% if boat.ownerid==current_user.id %>
         <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
         <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
     <p>

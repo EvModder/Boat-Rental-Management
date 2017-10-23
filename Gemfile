@@ -53,6 +53,9 @@ gem "jquery-slick-rails"
 #for pictures sliding https://github.com/manfe/bxslider-rails
 gem 'bxslider-rails'
 
+#for date-selecting using calender https://github.com/Nerian/bootstrap-datepicker-rails
+gem 'bootstrap-datepicker-rails'
+
 
 
 

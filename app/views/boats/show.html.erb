@@ -1,13 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p align="center">
   <strong>Name:</strong>
   <%= @boat.name %>
 </p>
 
-<p>
+<p align="center">
+  <strong>Owner:</strong>
+  <%= @boat.ownerid %>
+</p>
+
+<p align="center">
   <strong>Description:</strong>
   <%= @boat.description %>
+</p>
+
+
+<p align="center">
+  <strong>Available Date:</strong>
+  <%= @boat.available_date %>
 </p>
 
 
@@ -17,5 +28,9 @@
   <% end %>
 </ul>
 
+<p align="center">
+<% if @boat.ownerid==current_user.id %>
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
+<% end %>
 <%= link_to 'Back', boats_path %>
+</p>

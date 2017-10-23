@@ -16,3 +16,4 @@
 //= require_tree .
 //= require jquery.slick
 //= require bxslider
+//= require bootstrap-datepicker
