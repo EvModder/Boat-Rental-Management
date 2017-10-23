@@ -6,11 +6,15 @@
         </span>
 
         <span class="navbar-text">
-            <a class="bg-primary text-white"  href="#">Rent Boat</a>
+            <%= link_to "Rent Boat", boats_path, class: "bg-primary text-white"%>
         </span>
 
         <span class="navbar-text">
-            <%= link_to "Post Boat", boats_path, class: "bg-primary text-white"%>
+          <% if user_signed_in? %>
+              <%= link_to "Post Boat", new_boat_path, class: "bg-primary text-white"%>
+          <%else%>
+              <%= link_to "Post Boat", new_user_session_path, class: "bg-primary text-white"%>
+          <%end%>
         </span>
 
         <span class="navbar-text nav navbar-nav navbar-right">

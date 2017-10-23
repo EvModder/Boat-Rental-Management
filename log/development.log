@@ -7723,3 +7723,1957 @@ Processing by BoatsController#show as HTML
   Rendered boats/show.html.erb within layouts/application (1.7ms)
   Rendered shared/_navbar.html.erb (0.5ms)
 Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 01:07:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+Completed 200 OK in 1541ms (Views: 1524.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boats.self-fc54a94b0dba7431df4be8c83f0a012bf7274cd2dd86013a7848a02aed70bd8a.js?body=1" for ::1 at 2017-10-21 01:07:28 -0500
+
+
+Started GET "/" for ::1 at 2017-10-21 01:07:30 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 01:07:37 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 01:07:53 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.4ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (2.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (115.0ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 292ms (Views: 258.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:08:11 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:08:11 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 91ms (Views: 88.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:14:09 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 457ms (Views: 455.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boats.self-77d2e5507dacae6a29865e48998d69a15d4b90b9019edb726c3293afd4c5d81f.js?body=1" for ::1 at 2017-10-21 01:14:10 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:14:34 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:15:35 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 368ms (Views: 365.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boats.self-7d4b2a64b65e80f8b742f2a4572154c4eca22856236a76b964a9a0c50edd4ff9.js?body=1" for ::1 at 2017-10-21 01:15:35 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:15:39 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:17:33 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 199ms (Views: 196.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:17:35 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:17:56 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `symbolize_keys' for "left":String):
+    13: 
+    14: <ul class="bxslider", align="left">
+    15:   <% @boat_attachments.each do |p| %>
+    16:       <%= image_tag p.image_url, align="left" %>
+    17:   <% end %>
+    18: </ul>
+    19: 
+  app/views/boats/show.html.erb:16:in `block in _app_views_boats_show_html_erb___1873055776410035573_70179981113640'
+  app/views/boats/show.html.erb:15:in `_app_views_boats_show_html_erb___1873055776410035573_70179981113640'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (127.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (219.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:18:08 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (41.5ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `align' for #<#<Class:0x007fa818a211c0>:0x007fa813e690c0>
+Did you mean?  assign):
+    13: 
+    14: <ul class="bxslider", align="left">
+    15:   <% @boat_attachments.each do |p| %>
+    16:       <%= image_tag p.image_url, align =>"left" %>
+    17:   <% end %>
+    18: </ul>
+    19: 
+  app/views/boats/show.html.erb:16:in `block in _app_views_boats_show_html_erb___1873055776410035573_70179974437940'
+  app/views/boats/show.html.erb:15:in `_app_views_boats_show_html_erb___1873055776410035573_70179974437940'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:18:23 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:18:28 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:21:03 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 195ms (Views: 193.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:21:05 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:22:34 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 166.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:22:50 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:29:30 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:29:49 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:29:52 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:30:13 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:31:07 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:31:37 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:31:49 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 81.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:31:54 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:36:07 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:36:22 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:37:26 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 256ms (Views: 253.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boats.self-15597edfcf83cdbf2e231b1e7dc928274da88db2e1658ae8c0e87bb4a1683f9a.js?body=1" for ::1 at 2017-10-21 01:37:26 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:37:30 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:39:45 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 252ms (Views: 250.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boats.self-76273188a53237271ad2790ce4c59086fd1c28688585769e84745c23c32507ba.js?body=1" for ::1 at 2017-10-21 01:39:46 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:41:28 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 364ms (Views: 360.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/boats.self-097bf353c5151724e8ef789ab2c5c644d04af86a769c3e368b9be4cb530e2c12.js?body=1" for ::1 at 2017-10-21 01:41:29 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:41:51 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:45:55 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 165.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:45:57 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:46:50 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 01:46:59 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:24:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (5.5ms)
+Completed 200 OK in 1278ms (Views: 1257.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:24:13 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:24:16 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.5ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (2.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (93.6ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 205ms (Views: 173.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:24:17 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 126.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:24:19 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:24:20 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 09:24:28 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.4ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 62.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 09:24:48 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-21 09:24:54 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:24:56 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:24:58 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:25:00 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:25:06 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:25:07 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (13.7ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:27:50 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:27:52 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.6ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:27:53 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:27:54 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (8.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:29:52 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.1ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-21 09:29:54 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (89.8ms)
+  Rendered boats/new.html.erb within layouts/application (94.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 159ms (Views: 151.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:30:00 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:31:50 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.5ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:31:51 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:31:52 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.4ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:43:21 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-21 09:43:38 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.0ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 94ms (Views: 82.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-21 09:43:40 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-21 09:43:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-21 09:43:50 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-10-21 09:44:28 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nf6+dJ2SRpI+TMST5ZpvDqGCJTRxUwMgnl98u39aBTIKwiQPZgecUgHXgyUQAqodT3yBKvn2fwN/iFm9H//VJg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (4.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "test@test.com"], ["encrypted_password", "$2a$10$BSNzXZbUtH9sP9UmDi9CCeDFbmQmsAmM3XsJDu2DJGI9f1IISAfGu"], ["created_at", "2017-10-21 14:44:28.624026"], ["updated_at", "2017-10-21 14:44:28.624026"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-10-21 14:44:28.633671"], ["current_sign_in_at", "2017-10-21 14:44:28.633671"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2017-10-21 14:44:28.634742"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 176ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:44:28 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-21 09:44:35 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.3ms)
+  Rendered boats/new.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/boats" for ::1 at 2017-10-21 09:45:07 -0500
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sd+ZORY3XovTB/MPNHlkN8t2ANc3CAWQkgNTQtYSFzQm4wNC7aKES+yctLnB4aEkJYikyb+tebNz1HZEtrfHIA==", "boat"=>{"name"=>"boat5", "description"=>"good boat"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007fad26c48120 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171021-24903-1gigpcd.jpg>, @original_filename="boat1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat1.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x007fad26c48008 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171021-24903-s6s1bu.jpg>, @original_filename="boat2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat2.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boats" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "boat5"], ["description", "good boat"], ["created_at", "2017-10-21 14:45:07.365974"], ["updated_at", "2017-10-21 14:45:07.365974"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat1.jpg"], ["boat_id", 4], ["created_at", "2017-10-21 14:45:07.632239"], ["updated_at", "2017-10-21 14:45:07.632239"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["image", "boat2.jpg"], ["boat_id", 4], ["created_at", "2017-10-21 14:45:07.778827"], ["updated_at", "2017-10-21 14:45:07.778827"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/boats/4
+Completed 302 Found in 425ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-10-21 09:45:07 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/show.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-21 09:45:11 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-10-21 09:45:16 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.4ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/show.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-10-21 09:45:18 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/show.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-10-21 09:45:28 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q/dAYZLJsmCA/fKN4eaHHbZ5NE7ANf7yNP6e4gRGBB48y9oaaVxooL9mtTsUfkIOWIeQUEiQgtHVKbvkZOPUCg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:45:29 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-21 09:45:32 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.9ms)
+  Rendered boats/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-21 09:46:07 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-21 09:51:07 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:12:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (5.1ms)
+Completed 200 OK in 1091ms (Views: 1075.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boats.self-77d2e5507dacae6a29865e48998d69a15d4b90b9019edb726c3293afd4c5d81f.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/boat_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/home_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/jquery.bxslider.self-378be78e3ae2ebfc909b86a0b3aea51858c2a394b967a6abafacb3d1fabeb8fd.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/bxslider.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/jquery.fitvids.self-0caa1c3cf6099ad75621d7021e543202502128d712d830ae831528e2a7460237.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/assets/sea-ced0b7e92c7a1cd981de207e1f86b4e87a98a19c5f08b8547310544b05b5a093.jpg" for ::1 at 2017-10-22 20:12:11 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:12:17 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (111.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 209ms (Views: 194.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:12:21 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:12:22 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (2.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (2.4ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (96.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 186ms (Views: 154.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:12:24 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (12.7ms)
+  Rendered boats/new.html.erb within layouts/application (18.4ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:12:26 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.5ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:12:27 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-22 20:12:30 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:15:52 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.8ms)
+  Rendered boats/new.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 135ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:16:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:16:48 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (4.5ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/shared/_navbar.html.erb:34: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/zaoyuanchang/RubymineProjects/se1020/boat-rental-management/app/views/shared/_navbar.html.erb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/shared/_navbar.html.erb:34: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/shared/_navbar.html.erb:36: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3890874297146925544_70356136492060'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:17:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:17:24 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:18:30 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:18:33 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:18:35 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:21:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 222ms (Views: 220.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:21:31 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:22:59 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:23:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-10-22 20:23:12 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tEyl7DzqvsBtpEU9JNTQEdrhOW0YUscuP9C2wKI1QLKBh/SQYQLVb+l1nrGF2y2QGbaj1fcefmoGRyv6iPP5dw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "test@test.com"]]
+Completed 401 Unauthorized in 162ms (ActiveRecord: 2.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tEyl7DzqvsBtpEU9JNTQEdrhOW0YUscuP9C2wKI1QLKBh/SQYQLVb+l1nrGF2y2QGbaj1fcefmoGRyv6iPP5dw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 158ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:23:19 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:25:53 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 197ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:25:55 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 71ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:25:56 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (10.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:25:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-22 20:26:00 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:26:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-22 20:26:02 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:26:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 153ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-22 20:41:50 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 210ms (Views: 203.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2017-10-22 20:42:03 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WugsqHWA+vILhC0ZsBwdSHAV+WS9bNPM9Lswnjb45HAoPHO/D5oREz/yzjHz4304pfNXX25CgsKRXH4Uh1aVA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (2.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 270ms (Views: 129.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:42:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 81ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-22 20:42:09 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-10-22 20:42:19 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BL6zyWEyZGeHXwFOdJawqu1dMFghOhjTLOEnZPeYPHYxdeK1PNoPyAOO2sLVmU0rLgqq4M52oZcVdrpe3V6Fsw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@test.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-10-23 01:42:19.615164"], ["sign_in_count", 2], ["updated_at", "2017-10-23 01:42:19.616069"], ["id", 1]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:42:19 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:42:24 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.3ms)
+  Rendered boats/new.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 95ms (Views: 66.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:42:27 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:42:38 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (4.2ms)
+  Rendered boats/new.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:42:39 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (3.5ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (2.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 73ms (Views: 65.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:42:40 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (8.7ms)
+  Rendered boats/new.html.erb within layouts/application (25.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:42:44 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.4ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (13.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 88ms (Views: 86.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:42:46 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (5.1ms)
+  Rendered boats/new.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:42:48 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:42:50 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:42:53 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.5ms)
+  Rendered boats/new.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:42:58 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:43:02 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 77ms (Views: 73.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-10-22 20:43:04 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-10-22 20:43:08 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bx_loader-6d46e2cf165a5a0584afba7bc9663da292ee08c97cfc7613de6013ed05be892a.gif" for ::1 at 2017-10-22 20:43:08 -0500
+
+
+Started GET "/assets/controls-257206c4fd6bcee36927eb0ef2ba087b5dfc6c9a18df7f8553878bf847616226.png" for ::1 at 2017-10-22 20:43:08 -0500
+
+
+Started GET "/" for ::1 at 2017-10-22 20:43:14 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:43:16 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:43:18 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:43:20 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:45:48 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:45:49 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (3.7ms)
+  Rendered boats/new.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:45:51 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (1.0ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:45:52 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:46:05 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:46:13 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:46:15 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:46:26 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:47:15 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:47:19 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (6.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:47:20 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:48:52 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 427ms (Views: 425.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/boats.self-226f39e861b59d7cdc9fb99ef9104d6de6e55194d57f659459c7bf082823cb98.js?body=1" for ::1 at 2017-10-22 20:48:53 -0500
+
+
+Started GET "/" for ::1 at 2017-10-22 20:48:54 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:48:55 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.4ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 74ms (Views: 72.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:48:56 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:49:01 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:49:02 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.5ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (14.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:03 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.4ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:05 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:49:20 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 274ms (Views: 273.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/boats.self-457049343eb3ce9a42d5989c25dc78fbddf65c319ebf58354186b37b4e03c4a5.js?body=1" for ::1 at 2017-10-22 20:49:20 -0500
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:49:22 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (11.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:24 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 101ms (Views: 97.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:34 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:36 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:37 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:38 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:50 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:49:52 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:49:53 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (4.8ms)
+  Rendered boats/new.html.erb within layouts/application (9.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:49:55 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:49:57 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:50:52 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 247ms (Views: 245.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boats.self-d19ce1add64d3dc594275c293b97b1ecfe8699746d10b82742656bd004ca88a5.js?body=1" for ::1 at 2017-10-22 20:50:52 -0500
+
+
+Started GET "/" for ::1 at 2017-10-22 20:50:54 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:50:55 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (10.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:50:56 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (1.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 84ms (Views: 78.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:50:58 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:50:59 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:51:03 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (4.7ms)
+  Rendered boats/new.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:51:04 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (10.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 89ms (Views: 86.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:51:05 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 100ms (Views: 97.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:51:10 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:51:13 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-22 20:51:15 -0500
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (4.6ms)
+  Rendered boats/new.html.erb within layouts/application (7.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:51:16 -0500
+Processing by BoatsController#index as HTML
+  [1m[36mBoat Load (0.4ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.5ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (11.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:51:17 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.4ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 77ms (Views: 73.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:52:31 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.5ms)
+Completed 200 OK in 285ms (Views: 283.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/boats.self-5ce71793ce0425585b067a1596481a1092a6cb85438c8e907fcf9a9b2d833e93.js?body=1" for ::1 at 2017-10-22 20:52:31 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:52:32 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 88ms (Views: 84.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:52:35 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:53:32 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 262ms (Views: 259.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/boats.self-c11d45a47fc6af440fd24c9333fc02773df36a5fc725fcbc1f6d767fb7c44833.js?body=1" for ::1 at 2017-10-22 20:53:32 -0500
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:53:33 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (10.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:53:35 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:53:36 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.8ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (11.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:53:37 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.7ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-22 20:53:42 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 90ms (Views: 89.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats" for ::1 at 2017-10-22 20:53:43 -0500
+Processing by BoatsController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (1.5ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered boats/index.html.erb within layouts/application (17.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-10-22 20:53:44 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoatAttachment Load (0.4ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/show.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.8ms)
