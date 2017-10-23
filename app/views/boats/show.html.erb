@@ -11,11 +11,11 @@
 </p>
 
 
-<div class="bxslider">
+<ul class="bxslider">
   <% @boat_attachments.each do |p| %>
-      <%= image_tag p.image_url%>
+      <li><%= image_tag p.image_url%></li>
   <% end %>
-</div>
+</ul>
 
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
 <%= link_to 'Back', boats_path %>
