@@ -1,5 +1,6 @@
 class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :edit, :update, :destroy, :remove_image]
+  before_filter :authenticate_user!
 
   # GET /boats
   # GET /boats.json

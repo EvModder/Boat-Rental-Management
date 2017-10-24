@@ -76,11 +76,11 @@ group :development do
   gem 'spring'
   gem "bootstrap-sass-rails", "~> 2.2.2.0"
 gem 'rspec'
-group :test do
-  gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-end
+#group :test do
+#  gem 'cucumber-rails', :require => false
+#  # database_cleaner is not required, but highly recommended
+#  gem 'database_cleaner'
+#end
 
 end
 
