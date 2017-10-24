@@ -48,6 +48,12 @@
       <%= p.file_field :image, :multiple => true, name: "boat_attachments[image][]" %>
     </div>
   <% end %>
+
+  <div class="field">
+    <%= f.label :video %><br>
+    <%=f.file_field :video%>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

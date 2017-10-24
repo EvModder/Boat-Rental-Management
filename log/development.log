@@ -35662,3 +35662,475 @@ Completed 200 OK in 254ms (Views: 252.6ms | ActiveRecord: 0.0ms)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddVideoToBoats (20171024161124)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "boats" ADD "video" varchar[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20171024161124"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2017-10-24 11:33:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (4.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (48.5ms)
+Completed 200 OK in 3210ms (Views: 3185.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-10-24 11:33:34 -0500
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered boats/_form.html.erb (102.1ms)
+  Rendered boats/new.html.erb within layouts/application (104.0ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 383ms (Views: 270.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-10-24 11:35:43 -0500
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RgrOEPtj2y7aRDzJ3Dgn1KVbs1ffswe/FJRf5E76sxN4aYdJkH2Ui4HC2WU6n4JZyxBZeA4xOnaZ/zuwwHk71A==", "boat"=>{"name"=>"charlie", "description"=>"cc", "ownerid"=>"", "price"=>"87", "location"=>"Texas", "available_date"=>"10/29/2017", "video"=>#<ActionDispatch::Http::UploadedFile:0x007fd290d7f950 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171024-40365-1427fyr.mp4>, @original_filename="Charlie bit my finger - again !.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"boat[video]\"; filename=\"Charlie bit my finger - again !.mp4\"\r\nContent-Type: video/mp4\r\n">}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007fd290d7f6f8 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171024-40365-1vug1i4.jpg>, @original_filename="boat3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat3.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "boats" ("name", "description", "available_date", "price", "location", "video", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "charlie"], ["description", "cc"], ["available_date", "10/29/2017"], ["price", 87], ["location", "Texas"], ["video", "Charlie_bit_my_finger_-_again__.mp4"], ["ownerid", 1], ["created_at", "2017-10-24 16:35:43.893671"], ["updated_at", "2017-10-24 16:35:43.893671"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat3.jpg"], ["boat_id", 11], ["created_at", "2017-10-24 16:35:44.112648"], ["updated_at", "2017-10-24 16:35:44.112648"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/boats/11
+Completed 302 Found in 240ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:35:44 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (60.3ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x007fd28e723928>:0x007fd292692ff0>):
+    30: 
+    31: <p align="center">
+    32:   <strong>Video:</strong>
+    33:   <%= video_tag post.video_url.to_s :controls =>true %>
+    34: </p>
+    35: 
+    36: <p align="center">
+  app/views/boats/show.html.erb:33:in `_app_views_boats_show_html_erb___1094758985196906946_70271188110860'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.0ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:36:13 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    30: 
+    31: <p align="center">
+    32:   <strong>Video:</strong>
+    33:   <%= video_tag @boat.video_url.to_s :controls =>true %>
+    34: </p>
+    35: 
+    36: <p align="center">
+  app/views/boats/show.html.erb:33:in `to_s'
+  app/views/boats/show.html.erb:33:in `_app_views_boats_show_html_erb___1094758985196906946_70271172372340'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.4ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:36:33 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (43.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `boat' for #<#<Class:0x007fd28e723928>:0x007fd290e4d5a8>
+Did you mean?  @boat):
+    30: 
+    31: <p align="center">
+    32:   <strong>Video:</strong>
+    33:   <%= video_tag boat.video_url.to_s :controls =>true %>
+    34: </p>
+    35: 
+    36: <p align="center">
+  app/views/boats/show.html.erb:33:in `_app_views_boats_show_html_erb___1094758985196906946_70271175385360'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.8ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:37:06 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 270ms (Views: 265.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:38:34 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    30: 
+    31: <p align="center">
+    32:   <strong>Video:</strong>
+    33:   <%= video_tag @boat.video_url.to_s :controls =>true %>
+    34: </p>
+    35: 
+    36: <p align="center">
+  app/views/boats/show.html.erb:33:in `to_s'
+  app/views/boats/show.html.erb:33:in `_app_views_boats_show_html_erb___1094758985196906946_70271184395660'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.1ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:39:13 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 281ms (Views: 278.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:44:48 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 281ms (Views: 278.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:46:17 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 235ms (Views: 232.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:47:13 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 228.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:51:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 767ms (Views: 665.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:51:44 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (1.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (16.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 342ms (Views: 334.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:53:07 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 225ms (Views: 222.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/@boat.video_url" for ::1 at 2017-10-24 11:53:08 -0500
+Processing by BoatsController#show as 
+  Parameters: {"id"=>"@boat"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Boat with 'id'=@boat):
+  app/controllers/boats_controller.rb:73:in `set_boat'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.6ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:53:18 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 226ms (Views: 223.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/@boat.video_url" for ::1 at 2017-10-24 11:53:19 -0500
+Processing by BoatsController#show as 
+  Parameters: {"id"=>"@boat"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Boat with 'id'=@boat):
+  app/controllers/boats_controller.rb:73:in `set_boat'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.5ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:53:33 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 261ms (Views: 258.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:54:10 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    30: 
+    31: <p align="center">
+    32:   <strong>Video:</strong>
+    33:   <%= video_tag @boat.video_url.to_s :controls =>true %>
+    34: 
+    35: </p>
+    36: 
+  app/views/boats/show.html.erb:33:in `to_s'
+  app/views/boats/show.html.erb:33:in `_app_views_boats_show_html_erb__2246814633819641249_70124354062560'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.3ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:56:36 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 219ms (Views: 215.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 11:59:41 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 248ms (Views: 243.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 12:00:07 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 245ms (Views: 242.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 12:00:22 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 227ms (Views: 224.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 12:00:51 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 217ms (Views: 214.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/11" for ::1 at 2017-10-24 12:01:19 -0500
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 11]]
+  Rendered boats/show.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 234ms (Views: 231.8ms | ActiveRecord: 0.3ms)
