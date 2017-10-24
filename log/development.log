@@ -14478,6 +14478,7 @@ Processing by RegistrationsController#new as HTML
 Completed 200 OK in 291ms (Views: 275.5ms | ActiveRecord: 0.6ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 165.91.12.176 at 2017-10-24 02:02:05 +0000
 Cannot render console from 165.91.12.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
@@ -14652,6 +14653,52 @@ Migrations are pending. To resolve this issue, run:
 ):
   activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
   activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+=======
+Started GET "/" for ::1 at 2017-10-23 19:44:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (8.3ms)
+Completed 200 OK in 645ms (Views: 632.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-23 19:44:30 -0500
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 284ms (Views: 271.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/captains" for ::1 at 2017-10-23 19:44:36 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for CaptainsController):
+  actionpack (4.2.6) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+>>>>>>> iter2
   actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
   activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
   activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
@@ -14660,7 +14707,11 @@ Migrations are pending. To resolve this issue, run:
   actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+<<<<<<< HEAD
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+=======
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+>>>>>>> iter2
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
   actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
@@ -14682,6 +14733,7 @@ Migrations are pending. To resolve this issue, run:
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -35562,3 +35614,33 @@ Processing by HomePageController#index as HTML
   Rendered home_page/index.html.erb within layouts/application (0.0ms)
   Rendered shared/_navbar.html.erb (0.6ms)
 Completed 200 OK in 182ms (Views: 181.4ms | ActiveRecord: 0.0ms)
+=======
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (159.1ms)
+
+
+Started GET "/captains/new" for ::1 at 2017-10-23 19:44:46 -0500
+Processing by CaptainsController#new as HTML
+  Rendered captains/new.html.erb within layouts/application (19.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 325ms (Views: 306.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-23 19:44:54 -0500
+Processing by HomePageController#index as HTML
+  Rendered home_page/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 254ms (Views: 252.6ms | ActiveRecord: 0.0ms)
+>>>>>>> iter2
