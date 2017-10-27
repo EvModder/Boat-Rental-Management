@@ -29,6 +29,7 @@
 </ul>
 
 <p align="center">
+  <%= commontator_thread(@boat) %>
 <% if @boat.ownerid==current_user.id %>
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
 <% end %>

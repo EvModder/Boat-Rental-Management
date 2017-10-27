@@ -56,6 +56,8 @@ gem 'bxslider-rails'
 #for date-selecting using calender https://github.com/Nerian/bootstrap-datepicker-rails
 gem 'bootstrap-datepicker-rails'
 
+#for adding comment function https://goo.gl/hHaXWH
+gem 'commontator', '~> 4.11.1'
 
 
 

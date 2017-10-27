@@ -74,6 +74,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    commontator (4.11.1)
+      jquery-rails
+      rails (>= 3.1)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
     cucumber (3.0.1)
@@ -269,6 +272,7 @@ DEPENDENCIES
   carrierwave (~> 0.10.0)
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
+  commontator (~> 4.11.1)
   cucumber-rails
   database_cleaner
   devise (~> 3.5.10)
