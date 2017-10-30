@@ -28,7 +28,7 @@ class BoatAttachmentsController < ApplicationController
 
     respond_to do |format|
       if @boat_attachment.save
-        format.html { redirect_to @boat_attachment, notice: 'Boat attachment was successfully created.' }
+        format.html { redirect_to @boat_attachment, notice: 'Boat attachment was successfully posted.' }
         format.json { render :show, status: :created, location: @boat_attachment }
       else
         format.html { render :new }

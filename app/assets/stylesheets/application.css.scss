@@ -37,6 +37,7 @@
     z-index: -5000;
     resize: both;
     overflow: scroll;
+    filter: blur(3px);
 }
 html {
     min-height: 100%;

@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20171027190633) do
   end
 
   create_table "captains", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "age",                    limit: 5
     t.integer  "year_experience",        limit: 5
     t.text     "comments",               limit: 1000

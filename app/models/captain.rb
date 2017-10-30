@@ -1,2 +1,5 @@
 class Captain < ActiveRecord::Base
-  end
+
+  # can't be saved without a user
+  belongs_to :user, { :optional  => false }
+end

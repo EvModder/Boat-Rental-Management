@@ -1,2 +1,2 @@
 module RegistrationsControllerHelper
-  end
+end

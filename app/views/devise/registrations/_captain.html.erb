@@ -1,0 +1,83 @@
+  <%= s.fields_for :captains do |f| %>
+  
+    <div class="form-group">
+      <%= f.label :age, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.select(:age, 18..100) %>
+      </div>
+  </div>
+    </br>
+
+    <div class="form-group">
+      <%= f.label :year_experience, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.select(:year_experience, 0..60) %>
+      </div>
+  </div>
+    </br>
+
+    <div class="form-group">
+      <%= f.label :first_available_date, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.date_select(:first_available_date, :order => [:month, :day, :year]) %>
+      </div>
+  </div>
+    </br>
+
+     <%# <%= render(:partial => 'form', :locals => {:f => f}) %>
+     <div class="form-group">
+      <%= f.label :time_availablity, class: "col-sm-2 control-label" %>
+  <div class="col-sm-6">
+    <table class="table borderless">
+      <tr>
+        <th>Monday</th>
+        <td><%= f.check_box(:monday)%> </td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+
+        <td><%= f.check_box(:tuesday)%> </td>
+
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td><%= f.check_box(:wednesday)%> </td>
+
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td><%= f.check_box(:thursday)%> </td>
+
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td><%= f.check_box(:friday)%> </td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td><%= f.check_box(:saturday)%> </td>
+      </tr>
+      <tr>
+        <th>Sunday</th>
+        <td><%= f.check_box(:sunday)%> </td>
+      </tr>
+    </table>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :comments, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.text_area :comments, class: "form-control" %>
+      </div>
+  </div>
+    </br>
+
+
+    <% end %>
+
+
+
+
+
+
