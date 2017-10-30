@@ -38,7 +38,7 @@ Commontator.configure do |config|
   
   ##lawrence marked for showuser name
 
-   config.user_name_proc = lambda { |user| I18n.t('commontator.anonymous') }
+   config.user_name_proc = lambda { |user| user.first_name+' '+user.last_name }
   #config.user_name_proc = lambda { |user| current_user.id }
 
   # user_link_proc

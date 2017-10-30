@@ -44,8 +44,10 @@ gem 'bootstrap-sass', '~> 3.1.1.0'
 gem 'pundit'
 
 #for uploading pictures
+#also works for videos https://stackoverflow.com/questions/5463572/upload-video-in-a-rails-application/22566081
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
+
 
 #for viewing pictures
 gem "jquery-slick-rails"

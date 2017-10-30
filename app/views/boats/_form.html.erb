@@ -20,6 +20,7 @@
     <%= f.text_area :description %>
   </div>
   <%= f.hidden_field :ownerid%>
+  <%= f.hidden_field :owner_name%>
   <div class="field">
     <%= f.label :price %><br>
     <%= f.text_field :price %>
@@ -48,6 +49,12 @@
       <%= p.file_field :image, :multiple => true, name: "boat_attachments[image][]" %>
     </div>
   <% end %>
+
+  <div class="field">
+    <%= f.label :video %><br>
+    <%=f.file_field :video%>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
