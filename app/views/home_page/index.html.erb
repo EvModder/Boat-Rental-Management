@@ -1,1 +1,16 @@
 <h1>Welcome to Texas Boat Renting Service! </h1>
+
+<div class="clearfix"></div>
+
+<div class="">
+    [ search bar here ]
+</div>
+
+<div class="boat_panel">
+    <% @boats.limit(20).each do |boat| %>
+        [Boat image] 
+        <% if false %>
+            <%= link_to image_tag(boat.boat_attachments[0].image.thumb.url), boat %>
+        <% end %>
+    <% end %>
+</div>

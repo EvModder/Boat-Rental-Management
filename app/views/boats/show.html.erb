@@ -5,10 +5,12 @@
   <%= @boat.name %>
 </p>
 
+<% if current_user.first_name!='' %>
 <p align="center">
   <strong>Owner:</strong>
-  <%= @boat.ownerid %>
+  <%= @boat.owner_name %>
 </p>
+<% end %>
 
 <p align="center">
   <strong>Description:</strong>
@@ -28,13 +30,16 @@
   <% end %>
 </ul>
 
+<% if @boat.video_url!=nil %>
 <p align="center">
   <strong>Video:</strong><br/>
   <%= video_tag @boat.video_url.to_s, :controls =>true %>
-
 </p>
+<% end %>
 
 <p align="center">
+  <%= commontator_thread(@boat) %>
+
 <% if @boat.ownerid==current_user.id %>
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
 <% end %>
