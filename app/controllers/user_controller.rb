@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         @captain = @user.captain.create!(params[:captains])
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to root_path, notice: 'User was successfully created.' }
       else
         format.html { render action: "new" }
       end
