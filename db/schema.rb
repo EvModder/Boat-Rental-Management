@@ -7,11 +7,11 @@
 # database schema. If you need to create the application database on another
 # system, you should be using db:schema:load, not running all the migrations
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
-# you'll amass, the slower it'll run and the greater likelihood for issues).
+# you amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171023151203) do
+ActiveRecord::Schema.define(version: 0) do
 
   create_table "boat_attachments", force: :cascade do |t|
     t.integer  "boat_id"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20171023151203) do
     t.integer  "ownerid"
     t.integer  "price"
     t.text     "location"
+    t.string   "video"
   end
 
   create_table "captains", force: :cascade do |t|
