@@ -1,5 +1,5 @@
-<%= form_for(@captain, html: {class: 'form-horizontal'}) do |f| %>
-
+  <%= s.fields_for :captains do |f| %>
+  
     <div class="form-group">
       <%= f.label :age, class: "col-sm-2 control-label" %>
       <div class="col-sm-6">
@@ -72,12 +72,6 @@
       </div>
   </div>
     </br>
-
-    <div class="form-buttons">
-      <div class="col-sm-4 control-label">
-          <%= f.submit("Register as captain") %>
-      </div>
-  </div>
 
 
     <% end %>

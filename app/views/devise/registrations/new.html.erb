@@ -1,3 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+    <script> 
+      $(document).ready(function(){
+        $("#myinput").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+    </script>
+
+    <style> 
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        <%# background-color: #e5eecc; %>
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+    }
+    </style>
+  </head>
+<body>
+
 
 <h2>Sign up</h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
@@ -86,9 +115,15 @@
 
     <div class="form-group">
       <%= f.label :isCaptain, class: "col-sm-2 control-label" %>
-      <div class="col-sm-6" >
+      <div class="col-sm-6" id="myinput">
         <%= f.check_box(:isCaptain)%> Register as a certified captain
+        <%# <div id="flip">Click to slide the panel down or up</div> %>
       </div>
+      <div class="col-sm-6" id="panel">
+        <%= render(:partial => 'captain', :locals => {:s => f}) %>
+      </div>
+        
+      
     </div>
     </br>
 
@@ -105,4 +140,7 @@
 </div>
 
 <% end %>
+
+</body>
+</html>
 
