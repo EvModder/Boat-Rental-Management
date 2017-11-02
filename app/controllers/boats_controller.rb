@@ -34,8 +34,9 @@ class BoatsController < ApplicationController
         params[:boat_attachments]['image'].each do |a|
           @boat_attachment = @boat.boat_attachments.create!(:image => a)
         end
-        format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
-        format.json { render :show, status: :created, location: @boat }
+        #below notice will cause strange position for rent button, will fix this later
+        #format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
+        #format.json { render :show, status: :created, location: @boat }
       else
         format.html { render :new }
         format.json { render json: @boat.errors, status: :unprocessable_entity }

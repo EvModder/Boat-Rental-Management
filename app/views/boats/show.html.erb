@@ -33,8 +33,10 @@
 <br><br>
 
 <p>
+   <% if @boat.video_url != nil %>
     <strong>Video:</strong><br/>
     <%= video_tag @boat.video_url.to_s, :controls =>true %>
+   <% end %>
 
   </p>
 
