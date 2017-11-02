@@ -25,10 +25,8 @@ class RegistrationsController < Devise::RegistrationsController
 
               }).save(validate: false)
           format.html { redirect_to root_path, notice: 'Captain was successfully created.' }
-           sign_up(@user_name, @user)
         else
           format.html { redirect_to root_path, notice: 'User was successfully created.' }
-          sign_up(@user_name, @user)
         end
           format.json { render :show, status: :created, location: @user }
         else
