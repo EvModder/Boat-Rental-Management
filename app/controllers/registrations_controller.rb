@@ -7,7 +7,7 @@ class RegistrationsController < Devise::RegistrationsController
       @user = User.new(sign_up_params)
       respond_to do |format|
         if @user.save
-          if params[:user][:isCaptain]
+          if params[:user][:isCaptain] == "1"
            @captain = @user.build_captain(
               {
                   #user_id: @user.id,
