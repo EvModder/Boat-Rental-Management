@@ -1,0 +1,11 @@
+I"È(function() {
+  $(document).on('turbolinks:load', function() {
+    return $(".bxslider").bxSlider({
+      slideWidth: 500,
+      mode: 'fade',
+      adaptiveHeight: true
+    });
+  });
+
+}).call(this);
+:ET
