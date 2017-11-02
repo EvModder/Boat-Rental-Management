@@ -36,6 +36,7 @@ class BoatsController < ApplicationController
         end
         #below notice will cause strange position for rent button, will fix this later
         #format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
+        format.html { redirect_to @boat}
         format.json { render :show, status: :created, location: @boat }
       else
         format.html { render :new }
