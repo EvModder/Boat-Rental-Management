@@ -30,16 +30,19 @@
     <%= f.text_area :location %>
   </div>
 
-  <div>
-    <%= f.label :available_date %><br>
-    <input type="text" class="datepicker" size="150" id="boat_available_date" name="boat[available_date]">
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.datepicker').datepicker({multidate: true});
-        });
-    </script>
-  </div>
+    <%= f.label :available_date %><br>
+    <div id="datepicker">
+      <script type="text/javascript">
+          $('#datepicker').datepicker({multidate:true});
+          $('#datepicker').on('changeDate', function() {
+              $('#boat_available_date').val(
+                  $('#datepicker').datepicker('getFormattedDate')
+              );
+          });
+      </script>
+    </div>
+    <input type="hidden" id="boat_available_date" name="boat[available_date]">
 
 
 

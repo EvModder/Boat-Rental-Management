@@ -18,18 +18,30 @@
     <%= @boat.description %>
   </p>
 
+<ul class="bxslider" >
+  <% @boat_attachments.each do |p| %>
+      <li><%= image_tag p.image_url%></li>
+  <% end %>
+</ul>
+<br><br>
 
-<p>
-    <strong>Available Date:</strong>
-    <%= @boat.available_date %>
+<p class="rentoption">
+  <strong>Hire a Captain?</strong><br>
+  <input type="radio" name="with_captain" value="yes"> Yes
+  <input type="radio" name="with_captain" value="no"> No<br><br>
+
+    <strong>Pick a Date!</strong>
+
+      <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
+
+    <div id="datepicker">
+
+    </div>
+
+
   </p>
 
 
-<ul class="bxslider">
-    <% @boat_attachments.each do |p| %>
-            <li><%= image_tag p.image_url%></li>
-        <% end %>
-  </ul>
 <br><br>
 
 <p>
