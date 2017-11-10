@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'rent/index'
+
+  get 'rent/new'
+
+  get 'rent/show'
+
+  get 'rent/delete'
+
+  get 'rent/edit'
+
   root 'home_page#index'
 
   resources :boat_attachments

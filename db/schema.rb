@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171030032213) do
+ActiveRecord::Schema.define(version: 20171110045821) do
 
   create_table "boat_attachments", force: :cascade do |t|
     t.integer  "boat_id"
@@ -99,6 +99,15 @@ ActiveRecord::Schema.define(version: 20171030032213) do
   end
 
   add_index "commontator_threads", ["commontable_id", "commontable_type"], name: "index_commontator_threads_on_c_id_and_c_type", unique: true
+
+  create_table "rents", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "comments",        limit: 1000
+    t.text     "date_required"
+    t.boolean  "captainRequired",              default: false
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                             default: "",    null: false
