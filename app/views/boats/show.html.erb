@@ -4,7 +4,7 @@
     <strong>Name:</strong>
     <%= @boat.name %>
   <i class="rentbutton">
-      <%= link_to image_tag("rent-now-button.png", width: "50%"), {:controller => 'boats', :action => "rent" } %>
+      <%= link_to image_tag("rent-now-button.png", width: "50%"), {:controller => 'rents', :action => "new" } %>
       </i>
   </p>
 

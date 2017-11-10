@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'rents/index'
+
+  get 'rents/show'
+
+  get 'rents/create'
+
+  get 'rents/edit'
+
+  get 'rents/delete'
+
+  get 'rents/new'
+
   get 'rent/index'
 
   get 'rent/new'
@@ -23,6 +35,7 @@ Rails.application.routes.draw do
 
   #boat renting
   get "boats/rent" => "boats#rent"
+  resources :rents
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,5 +1,5 @@
 class CreateRents < ActiveRecord::Migration
-  def change
+  def up
     create_table :rents do |t|
 
       t.integer :user_id
