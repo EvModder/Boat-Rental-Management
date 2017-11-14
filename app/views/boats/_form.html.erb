@@ -16,6 +16,18 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
+    <%= f.label :size %><br>
+    <%= f.number_field :width, :placeholder => 'width' %>ft.  <%= f.number_field :depth, :placeholder => 'depth' %>ft. <%= f.number_field :height, :placeholder => 'height' %>ft.
+  </div>
+  <div class="field">
+    <%= f.label :water, 'Driven in' %><br>
+    <%= f.select(:water, [ "salt water", "fresh water"] ) %>
+  </div>
+  <div class="field">
+    <%= f.label :capacity, 'Passenger capacity' %><br>
+    <%= f.number_field :capacity %>
+  </div>
+  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
@@ -25,12 +37,31 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_area :location %>
-  </div>
 
 
+
+
+    <div class="field">
+      <%= f.label :location, 'Location' %><br>
+      <%= f.text_field :location %>
+    </div>
+
+    <select id="states-of-country" name="boat[state]">
+      <option id="no-state" value="" selected>Select Your State</option>
+
+      /* For states within US */
+      <% CS.states(:us).each do |key, value| %>
+          <option value="<%= value %>" id="<%= key %>"><%= value %></option>
+      <% end %>
+    </select>
+
+    <select id="cities-of-state" name="boat[city]" required>
+      <option value="" selected>Select Your City</option>
+    </select>
+
+
+
+    <br><br>
     <%= f.label :available_date %><br>
     <div id="datepicker">
       <script type="text/javascript">

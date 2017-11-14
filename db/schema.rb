@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171110094844) do
+ActiveRecord::Schema.define(version: 20171114055533) do
 
   create_table "boat_attachments", force: :cascade do |t|
     t.integer  "boat_id"
@@ -32,6 +32,13 @@ ActiveRecord::Schema.define(version: 20171110094844) do
     t.text     "location"
     t.string   "video"
     t.string   "owner_name"
+    t.integer  "width"
+    t.integer  "depth"
+    t.integer  "height"
+    t.text     "water"
+    t.integer  "capacity"
+    t.text     "state"
+    t.text     "city"
   end
 
   create_table "captains", force: :cascade do |t|

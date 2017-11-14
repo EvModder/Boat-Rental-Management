@@ -65,6 +65,8 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    city-state (0.0.13)
+      rubyzip (~> 1.1)
     codeclimate-test-reporter (1.0.8)
       simplecov (<= 0.13)
     coffee-rails (4.1.1)
@@ -210,6 +212,7 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+    rubyzip (1.2.1)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -270,6 +273,7 @@ DEPENDENCIES
   byebug
   capybara
   carrierwave (~> 0.10.0)
+  city-state
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   commontator (~> 4.11.1)
