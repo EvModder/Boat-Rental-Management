@@ -11,9 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20171114055533) do
-
 
   create_table "boat_attachments", force: :cascade do |t|
     t.integer  "boat_id"

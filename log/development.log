@@ -3156,3 +3156,330 @@ Processing by BoatsController#index as HTML
   Rendered boats/index.html.erb within layouts/application (1.1ms)
   Rendered shared/_navbar.html.erb (0.5ms)
 Completed 200 OK in 357ms (Views: 354.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:42:59 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRents (20171110094844)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "rents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "comments" text(1000), "date_required" text, "captainRequired" boolean DEFAULT 'f', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20171110094844"]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddWidthDepthHeightWaterCapacityToBoats (20171114040159)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "boats" ADD "width" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "boats" ADD "depth" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "boats" ADD "height" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "boats" ADD "water" text
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "boats" ADD "capacity" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20171114040159"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddStateCityToBoats (20171114055533)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "boats" ADD "state" text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "boats" ADD "city" text
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171114055533"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_cached_votes_down' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_cached_votes_down' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_cached_votes_up' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_cached_votes_up' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_thread_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_thread_id_and_created_at' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_c_id_and_c_type_and_t_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_c_id_and_c_type_and_t_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_subscriptions_on_thread_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_subscriptions_on_thread_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_subscriptions_on_s_id_and_s_type_and_t_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_subscriptions_on_s_id_and_s_type_and_t_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_threads_on_c_id_and_c_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_threads_on_c_id_and_c_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:43:41 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/ubuntu/workspace/boat-rental-management/app/controllers/application_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/home_page_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:44:13 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_navbar.html.erb (28.3ms)
+Completed 200 OK in 3166ms (Views: 3146.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/boats.self-7f2abeb157c4184de0234d5efe579c003efe18b7b5a738104cdf23edd3f4a34a.css?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-439fa31b8f9f479c71061245681c6b02a073ae45e72c5e58cfddf76b7facd4c6.css?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/boat/new.self-82c4843cb7b8351a9cd86d82469966f6f1d05691584e2953197f1f5b702eab34.js?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/boat/view.self-34e35aa6feaca7456bb8db42a8fe2c3b15679a4b3c384cd33f6e568b66932ade.js?body=1" for 165.91.13.176 at 2017-11-14 17:44:17 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:44:22 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 218ms (Views: 216.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for 165.91.13.176 at 2017-11-14 17:44:23 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoatsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 268ms (Views: 257.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/new" for 165.91.13.176 at 2017-11-14 17:44:24 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered boats/_form.html.erb (682.5ms)
+  Rendered boats/new.html.erb within layouts/application (684.0ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 924ms (Views: 883.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats" for 165.91.13.176 at 2017-11-14 17:44:26 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 219ms (Views: 216.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/new" for 165.91.13.176 at 2017-11-14 17:44:27 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered boats/_form.html.erb (4.4ms)
+  Rendered boats/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 208ms (Views: 205.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 165.91.13.176 at 2017-11-14 17:44:30 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n3Wa40eRNjFNAw9dMRCge8ndU2ecB9jn1LnNJ/tT+9TPVB32oeHhAGQ6FE7UNdNSQ4BY9Bh2b0bcv+9gFjPdCg=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://software-engineering606-evmodder.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:44:30 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+Completed 200 OK in 232ms (Views: 231.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 165.91.13.176 at 2017-11-14 17:44:33 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 262ms (Views: 259.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 165.91.13.176 at 2017-11-14 17:44:37 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W3MKkfTxbLPCvVKmyspbthV0aKcPrqM0qL+4vkuaheu4C+WwZrnbjyaSH3HpMDT41rqlCZq1hYN5bexyxoPuGQ==", "user"=>{"email"=>"leakenate@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "leakenate@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-11-14 17:44:37.634630"], ["sign_in_count", 2], ["updated_at", "2017-11-14 17:44:37.636020"], ["id", 2]]
+  [1m[36m (19.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://software-engineering606-evmodder.c9users.io/
+Completed 302 Found in 137ms (ActiveRecord: 21.3ms)
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:44:37 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 283ms (Views: 282.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 165.91.13.176 at 2017-11-14 17:44:39 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1x6waaADAS5uBts0wuCz9I6OhES1cLt1zu1ugczDl1jSEwuK1VB9oYJJiystiGRr+kf4A7DPX0ip40yq4T4Djw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to https://software-engineering606-evmodder.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 165.91.13.176 at 2017-11-14 17:44:39 +0000
+Cannot render console from 165.91.13.176! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 266ms (Views: 265.1ms | ActiveRecord: 0.2ms)
