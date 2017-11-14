@@ -11,7 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171107000928) do
+
+ActiveRecord::Schema.define(version: 20171114055533) do
+
 
   create_table "boat_attachments", force: :cascade do |t|
     t.integer  "boat_id"
@@ -32,6 +34,13 @@ ActiveRecord::Schema.define(version: 20171107000928) do
     t.text     "location"
     t.string   "video"
     t.string   "owner_name"
+    t.integer  "width"
+    t.integer  "depth"
+    t.integer  "height"
+    t.text     "water"
+    t.integer  "capacity"
+    t.text     "state"
+    t.text     "city"
   end
 
   create_table "captains", force: :cascade do |t|
@@ -99,6 +108,15 @@ ActiveRecord::Schema.define(version: 20171107000928) do
   end
 
   add_index "commontator_threads", ["commontable_id", "commontable_type"], name: "index_commontator_threads_on_c_id_and_c_type", unique: true
+
+  create_table "rents", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "comments",        limit: 1000
+    t.text     "date_required"
+    t.boolean  "captainRequired",              default: false
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                             default: "",    null: false

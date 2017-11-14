@@ -4,10 +4,23 @@
 
 .bx-wrapper{
   margin:0 !important;
+
+}
+
+.bx-wrapper, .bx-viewport, .bx-wrapper, .bxslider {height: 300px !important;}
+
+
+
+.availableDate{
+  background: #fffd30;
+}
+
+.notAvailableDate{
+  background: #ff2d28;
 }
 
 .rentbutton{
   position:absolute;
-  top: 70px;
-  left: 320px;
+  top: 600px;
+  left: 300px;
 }

@@ -4,7 +4,7 @@
     <strong>Name:</strong>
     <%= @boat.name %>
   <i class="rentbutton">
-      <%= link_to image_tag("rent-now-button.png", width: "50%"), {:controller => 'boats', :action => "rent" } %>
+      <%= link_to image_tag("rent-now-button.png", width: "50%"), {:controller => 'rents', :action => "new" } %>
       </i>
   </p>
 
@@ -14,27 +14,63 @@
   </p>
 
 <p>
+  <strong>Width:</strong><%= @boat.width %>ft. <strong>Depth:</strong><%= @boat.depth %>ft. <strong>Height:</strong><%= @boat.height %>ft.
+</p>
+
+<p>
+  <strong>Driven in:</strong>
+  <%= @boat.water %>
+</p>
+
+<p>
+  <strong>Capcity:</strong>
+  <%= @boat.capacity %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @boat.state %>
+  <strong>City:</strong>
+  <%= @boat.city %>
+</p>
+
+
+<p>
     <strong>Description:</strong>
     <%= @boat.description %>
   </p>
 
+<ul class="bxslider" >
+  <% @boat_attachments.each do |p| %>
+      <li><%= image_tag p.image_url%></li>
+  <% end %>
+</ul>
+<br><br>
 
-<p>
-    <strong>Available Date:</strong>
-    <%= @boat.available_date %>
+<p class="rentoption">
+  <strong>Hire a Captain?</strong><br>
+  <input type="radio" name="with_captain" value="yes"> Yes
+  <input type="radio" name="with_captain" value="no"> No<br><br>
+
+    <strong>Pick a Date!</strong>
+
+      <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
+
+    <div id="datepicker">
+
+    </div>
+
+
   </p>
 
 
-<ul class="bxslider">
-    <% @boat_attachments.each do |p| %>
-            <li><%= image_tag p.image_url%></li>
-        <% end %>
-  </ul>
 <br><br>
 
 <p>
+   <% if @boat.video_url != nil %>
     <strong>Video:</strong><br/>
     <%= video_tag @boat.video_url.to_s, :controls =>true %>
+   <% end %>
 
   </p>
 

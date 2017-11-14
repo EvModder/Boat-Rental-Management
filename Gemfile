@@ -61,6 +61,9 @@ gem 'bootstrap-datepicker-rails'
 #for adding comment function https://goo.gl/hHaXWH
 gem 'commontator', '~> 4.11.1'
 
+#for selecting cities/states
+gem 'city-state'
+
 
 
 

@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :captain
+  has_many :rent
   accepts_nested_attributes_for :captain
   acts_as_commontator       
 end

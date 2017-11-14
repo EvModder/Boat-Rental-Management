@@ -1,5 +1,4 @@
 class RegistrationsController < Devise::RegistrationsController
-
   def new
     @user = User.new
     @captain = @user.build_captain
@@ -8,7 +7,8 @@ class RegistrationsController < Devise::RegistrationsController
       @user = User.new(sign_up_params)
       respond_to do |format|
         if @user.save
-          @captain = @user.build_captain(
+          if params[:user][:isCaptain] == "1"
+           @captain = @user.build_captain(
               {
                   #user_id: @user.id,
                   age: params[:user][:captains][:age],
@@ -24,8 +24,10 @@ class RegistrationsController < Devise::RegistrationsController
                   sunday: params[:user][:captains][:sunday],
 
               }).save(validate: false)
-
           format.html { redirect_to root_path, notice: 'Captain was successfully created.' }
+        else
+          format.html { redirect_to root_path, notice: 'User was successfully created.' }
+        end
           format.json { render :show, status: :created, location: @user }
         else
           format.html { render :new }

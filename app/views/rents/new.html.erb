@@ -1,0 +1,50 @@
+
+<%= form_for(@rent, html: {class: 'form-horizontal'}) do |f| %>
+
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+            <strong>Hire a Captain?</strong><br>
+            <div class="col-sm-6">
+                <input type="radio" name="with_captain" value="yes"> Yes
+                <input type="radio" name="with_captain" value="no"> No<br><br>
+            </div>
+            </p>
+        </div>
+  </div>
+</br>
+
+    <div class="form-group">
+      <%= f.label :Date_Required, class: "col-sm-2 control-label" %>
+        <div class="col-sm-6">
+            <div id="datepicker">
+            <script type="text/javascript">
+                $('#datepicker').datepicker({multidate:true});
+                $('#datepicker').on('changeDate', function() {
+                    $('#rent_date').val(
+                        $('#datepicker').datepicker('getFormattedDate')
+                    );
+                });
+            </script>
+            </div>
+
+            <input type="hidden" id="rent_date" name="rent[date_required]">
+
+        </div>
+    </div>
+    </br>
+
+    <div class="form-group">
+      <%= f.label :comments, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.text_area :comments, class: "form-control" %>
+      </div>
+  </div>
+    </br>
+
+    <div class="form-buttons">
+      <div class="col-sm-4 control-label">
+          <%= f.submit("Confirm Rent") %>
+      </div>
+    </div>
+
+    <% end %>

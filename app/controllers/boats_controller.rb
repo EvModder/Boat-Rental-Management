@@ -23,18 +23,20 @@ class BoatsController < ApplicationController
   # GET /boats/1/edit
   def edit
   end
-
   # POST /boats
   # POST /boats.json
   def create
     @boat = Boat.new(boat_params)
     @boat.owner_name = current_user.first_name + ' ' + current_user.last_name
+    @boat.ownerid = current_user.id
     respond_to do |format|
       if @boat.save
         params[:boat_attachments]['image'].each do |a|
           @boat_attachment = @boat.boat_attachments.create!(:image => a)
         end
-        format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
+        #below notice will cause strange position for rent button, will fix this later
+        #format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
+        format.html { redirect_to @boat}
         format.json { render :show, status: :created, location: @boat }
       else
         format.html { render :new }
@@ -75,6 +77,6 @@ class BoatsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def boat_params
-    params.require(:boat).permit(:ownerid, :name, :description, :available_date, :price, :location, :video, boat_attachments_attributes: [:id, :boat_id, :image])
+    params.require(:boat).permit(:ownerid, :name, :width, :depth, :height, :water, :capacity, :state, :city, :description, :available_date, :price, :location, :video, boat_attachments_attributes: [:id, :boat_id, :image])
   end
 end
