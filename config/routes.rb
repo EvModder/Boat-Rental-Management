@@ -35,8 +35,12 @@ Rails.application.routes.draw do
 
   #boat renting
   get "boats/rent" => "boats#rent"
+
+  
+
   get 'cities/:state', to: 'application#cities'
   resources :rents
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
