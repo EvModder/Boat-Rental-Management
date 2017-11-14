@@ -28,6 +28,7 @@ class BoatsController < ApplicationController
   def create
     @boat = Boat.new(boat_params)
     @boat.owner_name = current_user.first_name + ' ' + current_user.last_name
+    @boat.ownerid = current_user.id
     respond_to do |format|
       if @boat.save
         params[:boat_attachments]['image'].each do |a|
