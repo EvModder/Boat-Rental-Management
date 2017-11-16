@@ -4,6 +4,26 @@
 
 <div class="">
   [ search bar here ]
+
+  <%= form_tag(boats_path, :method => "get", id: "search-form") do %>
+      <select id="states-of-country" name="state">
+        <option id="no-state" value="" selected>Search By State</option>
+
+        /* For states within US */
+        <% CS.states(:us).each do |key, value| %>
+            <option value="<%= value %>" id="<%= key %>"><%= value %></option>
+        <% end %>
+      </select>
+
+      <select id="cities-of-state" name="city">
+        <option value="" selected>Search By City</option>
+      </select>
+      <%= number_field_tag :capacity, params[:capacity], placeholder: "Search By Capacity" %>
+      <%= submit_tag "Search" %>
+  <% end %>
+
+
+
 </div>
 
 <br>

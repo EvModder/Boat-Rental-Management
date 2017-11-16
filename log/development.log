@@ -3483,6 +3483,7 @@ Processing by HomePageController#index as HTML
   Rendered home_page/index.html.erb within layouts/application (0.8ms)
   Rendered shared/_navbar.html.erb (0.9ms)
 Completed 200 OK in 266ms (Views: 265.1ms | ActiveRecord: 0.2ms)
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
@@ -4099,12 +4100,385 @@ From: noreply@boat-rental-service.herokuapp.com
 Reply-To: noreply@boat-rental-service.herokuapp.com
 To: xxx@xxx.com
 Message-ID: <5a0e09e01445f_33513ff8140d30d07581f@axy-project-boat-final-final-5675497.mail>
+=======
+
+
+Started GET "/" for ::1 at 2017-11-15 21:47:48 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (47.5ms)
+Completed 200 OK in 2821ms (Views: 2791.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/boats.self-f5960a0716f7192e0e07c30a8cc8a332829cfbb3e685d9c8af1aa3591a514c7e.css?body=1" for ::1 at 2017-11-15 21:47:51 -0600
+
+
+Started GET "/assets/boat/new.self-82c4843cb7b8351a9cd86d82469966f6f1d05691584e2953197f1f5b702eab34.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/boat/view.self-34e35aa6feaca7456bb8db42a8fe2c3b15679a4b3c384cd33f6e568b66932ade.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/boats.self-d1a94078c2c240166a1b42ab15fd3fba8be971e7dce528b2fa8b1b63a6ee16d8.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/boat_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/captains.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/registrations_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/rents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/jquery.slick.self-96d384ee82b872f06bfd1de14b197c64f1cb7c51ce078246bbf0f3bd5cb54057.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/jquery.bxslider.self-378be78e3ae2ebfc909b86a0b3aea51858c2a394b967a6abafacb3d1fabeb8fd.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/home_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/jquery.fitvids.self-0caa1c3cf6099ad75621d7021e543202502128d712d830ae831528e2a7460237.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bxslider.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker-en-CA.self-c19bf50fb190b7b322f7c8e1d11e21bc315294878a8f103cd8432bc92d8c455c.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.self-962a18198db67ac87d9079f67b2167072ca4588cb77341999c5d6a93334a9143.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.self-e95a3ffa2c92ab9fd1c490585f0664f385a0c529f4b462c4e8f1fab196728f98.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bn.self-1721dd56eecad5ba2ccd46112769f1ce171642520592f495e2aa0e4531e233f1.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar-tn.self-cd89e457cd24dc3422b04345bbd6fc5ac9488e2f62866aaf2d2a1af10e5a9b23.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.self-a5688a644e52da4b08865ee27390f8863538bea1e91e9a92a8f5fc0441b69a8a.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.self-3b6d7157be553c75fb586e9bbcb1caf9ffb68b3e52621ce7a0b4d80b3816a41e.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bs.self-a9f88ff3048eda7a3915d3bc5fee831813bf64357688ca1d71249f190b5b3c2e.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.self-6269279f98dbec07d08be043c80d3698c8db6da6098298b06c7e9eaca989db3a.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.self-2f729a9075cd1bd927f12df912704a8d1644069464fa60d9af0bc7aafc7eff9e.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.self-9a18332afeed3b5d913f701e3a5359a3906fac9f8fe0d8271bfa59b17bef3843.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.self-ef1d1c456416d2ca63599c8885225bf37d5540b377089b25ef1e8bdd1c2dd9bf.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.self-df52cb73f35b10e81c27da3726fedcb47ce944244b37822f2808191f1b699614.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.self-c47144f58a0c79632a13f38f22efd1b9f2d077e4d6ed1184c473b92bb0a17383.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-AU.self-6667a122850dd1f2b2e036bdaad22bc82d7fb3d6f24c0eb0ca5455cbdfae2985.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-IE.self-2343c16be658cb33730d4bb5cc188138bfbfff767491792dba7fb6c3feec55f3.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.self-e822658c28f996dd9184e78b590ee770da01e479bc73fdb235b694232278bb4c.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-NZ.self-e7bff6fcdc1f42c430f5244edebec300ec6789167e45ad0d8c919a0d448a85c2.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-ZA.self-549cd856dbe9789814440b4a2b1ed261958a653716f64283cafd91fe41984ce7.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eo.self-bb3c1772c20b81e485802d43cdcda342c29037880fca098f5a82db81c8decae7.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.self-8d6af09ae9e4558db67ad818cac5de0451f7a10dc31a6e2987a715562524c44b.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eu.self-fef5a06820b6e2f4f66bd3d468c78838d7f3ff742fdc16721b786736f73260e9.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.self-20ab53975a47e1cdba4e7a41e0f0c567a2a699d53118ccdf6ea5aae33b692d15.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.self-2609765afa68eb2078568f8d785522a588a73222538228637427eac53496df66.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fo.self-fd8c0c500526cb16dd180ba9d832a4e5e0d40c3a570318a73ee2076b32cbbd1a.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr-CH.self-5a3e4840822fb4e6aa55af077ce89acb48e1629c299244258666a9eaf3e16a5f.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.self-fc22f4a24fd9c64106ee1ffdd8167f9bcbb8544093f9acfd3e78cc79acaaa8ab.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.self-1fccddef3fa899f6fc9f859fb7ea9d5839b554e6ec225bc2c195bd7f67ea55ad.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.self-9d26121395049e408a1223d6eeccf625e4969a6a5d52f740af1ad533646e93a4.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hi.self-ee309099bb304ebd522110354528306f2dac4d926fd59889a616b2c9897b5ff6.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.self-7e61fabfb46c1eb015b85ee997ba8710aebb4640736f5ac596cfd37f32caab66.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.self-f49dd94a82276c26c3441a8f5834842aaff8e1015d2ee90af3a842482685b1b3.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hy.self-71f80b7156e45cfa7d017d3478f409c9045cad95afc89c51f81b9886d729ab80.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.self-ea07114145eb6345c3e6b4e0ab99c8dcb42b05e7fc972cbde0997b752895ebc9.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.self-eb9734e137173e9c043266c371c2dc6723f896d0d10cd0d9489ab448425352de.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it-CH.self-717fdb47d5142b72e9e7f64eec844ae20deacf76e64b484fc6c52139ea64e607.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.self-71bbf2309e2ea365c4b4e21bcf5fa9e79bd1fb6aee0a2f097a0439645a79dbf7.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.self-cb335efac68187f94ccc34ed07c05f7cf6ace4ae97770209f1e89c92892f0610.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.self-a764d89f24c06495795654c820ee3f89643493c98638c209fb8e6d0fd779596a.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kh.self-6562a5a87f529e9a3121f8b49f20a6f7d3651340738f7d747a2418d721d01eae.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.self-4845840e42189e63d0aa4796c6664efe1edc81c9390acfdf1e5514fb91dc294e.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.km.self-449e37427989750d04e0c199bf18974d9060a7e4b1a2ceca92113df290ab69e5.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ko.self-77411d790ff5bbd9da257d55c4375bc080c3c72222f94abc313f675eeabaedd1.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.self-ca28b775db5a32ebbee6667b0bc40e26e078ce363db5c55c9a904155d3b9fdb5.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.self-fc4a3d6ee6a275732e35936f07c8fee862c21064b1471d79be6a50a81627c395.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.self-02466e87ecbfa926362519668f92ab8a87681a24daad873b3bc91aa1d7d31623.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.me.self-bc3ded41fba54540cb7c229e2a81c54e1dc95aa060e13249996c3af17a07d925.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.self-2879e14c87c2ed072afa02e973d28c25eccda71604f545f325f5ccb7f9566d9a.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mn.self-9bde9683a01be40a036bf1d3df9376fc1855a9df29248e5604ab8c1926bafe4f.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.self-5448409786aef52a30a3fa0309fed12e2972d62f3ffcecd3daad3661d2b3a3bb.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.self-bc15d9793637e09369dcc17cc1f76ee50f8fb3bd314b592238db7e107ba9780c.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.self-8a42d57bf7a5ef08e774ad6ac07ccc42119609f0887a0a9db992a31bc22fb8c8.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.self-12fa155a1784c9def99d028f7178ab609055cce8de67d75371780172dea6e6ce.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.self-835c27d08aa948acba7a496420da4d74da46ffbe5b7b900d927debc46878ceba.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.oc.self-473856c2eb30a34f3784c0b128f0e3a7808718789e5670d10a4efac75656cde3.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.self-beaec6979fb517a0022dd06657f2310ffa201718262e3effe464224290b923c3.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.self-c8b0cbc3c837667cc1e12914294f4cc5e3310d82d74031773327f31004772938.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.self-761e5926a9ad2a08a3931dbecc3f19f9079398de8cd2388f2a193c14d40d7de7.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.self-b622123899a6726a09eb3144e3e5a143c1fa665b68944418baa3da207b9095c8.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.self-a3302a16cb7cc00b6d455f26ed8a73f8890da7280ee9507c2cd9fe9f36ec6352.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.self-feebbe8794f70fd1a9839103b668d54252bdceead8543db0855eff02d4ccea1f.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.self-9454d3270f91908a6a033e58641a1ea206e47c92f6c259f1e795f00a3b011ee5.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.si.self-0127ca84598d92d0103d223ca4429688de7e5775e398c9a54b876345343c2cae.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.self-508e59df5ae2738367e9ee26ceb1984620c7d3365d89c500a2f654c73e41c4cc.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.self-7f8b31b2067824ef4ed30a8bc9b892e4de22b635b675e732d8cf0f63f35f8f77.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.self-3224e5dba45c9b9362543f5efe2a02d23b71b7181ea0b7a92fc4637559f17799.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr-latin.self-be5aec102faba5f69237b7bb53843eed7f75c417025cf9105616fe3bea3e3da0.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr.self-0fdd9f114cd83480c0d41f6c4cd9ff5d41984d64f6d7944bd4739f2b9a8b0559.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.self-59511a9cf8697e071e3e45937a4ffa74ce67edf099d767fcfcd43544833b639f.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.self-6b5e12e322803172a7bb234b38a2774a18b7057caba09bf10e95276875879a35.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ta.self-5ff6431196fb31a4e711ebe0fe734091f8a185392a5a6aba76fcbb15de0ba29c.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tg.self-473d886df0ca36c64898aaecfeb066d0101d1beb448c056bf76fde19344d4bd1.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.self-38ccaf19cff8c13178de6efb294156266bbb5ce6652531d4b53f7f869986ce71.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.self-32d4dcbd80fec4c33ced2cc50217d1cdfe9b351815a939878dedd504f0f29eec.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.self-d3090a654f9c3b2ecf04746b1d8616e9fbcd4f6063435f91e76ffd00688684f4.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.self-ba78379f87a0202998faa6e7c5b20476712eb0431e243819807b20ef110db58f.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uz-cyrl.self-9561a9426b1eb7d1f84e623a4ff472d4c5fccdd0047b7aac95006eb383b993ff.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uz-latn.self-a281f925edd80c328667f2908c551002377c210d343395a997f8c18d14ba5ea0.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.self-36dc3fbbffa4afffa02f84c934c42cc69a7b8bf9637967f9d510c3a595c06bfd.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.self-ea1ea635099f9e93b2f5903108a2f939897810d090fa5959545f9cd4ecfaef14.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.self-919520009565c93f98d81b453874a8adc045d992e4cf63904186e82f852e123b.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/bootstrap-datepicker/index.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2017-11-15 21:47:52 -0600
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:47:58 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (114.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 387ms (Views: 384.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:48:04 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JW3xuCFCczULYLaFsosM+7dhOfiqTb6HBV1Ta2GAtXnCai7t1AhAUcQX1MoUsJOHKO1uvskP8FTTCU99B/FFGA==", "user"=>{"email"=>"j@j.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "j@j.com"]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JW3xuCFCczULYLaFsosM+7dhOfiqTb6HBV1Ta2GAtXnCai7t1AhAUcQX1MoUsJOHKO1uvskP8FTTCU99B/FFGA==", "user"=>{"email"=>"j@j.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 364ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:48:29 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88XkeQMerzga2NY5WzEYuMmEl9Tqxeh0Fos06j2SrjwUwjss9lScXNWvtHb9CofEVgjAkomHpqfA3yj8W+NeXQ==", "user"=>{"email"=>"j@j.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "j@j.com"]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88XkeQMerzga2NY5WzEYuMmEl9Tqxeh0Fos06j2SrjwUwjss9lScXNWvtHb9CofEVgjAkomHpqfA3yj8W+NeXQ==", "user"=>{"email"=>"j@j.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 320ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-15 21:48:37 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (28.5ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (43.4ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 331ms (Views: 271.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2017-11-15 21:48:57 -0600
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XwVUV7YItxaNs0WpLdccukhFWDinZQKZvuCtGkkc3Dy4AosCQ0KEckLEJ+aL7IPG18kPfsQnTEpotLEML20sXQ==", "user"=>{"first_name"=>"j", "last_name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "address_line1"=>"j", "address_line2"=>"j", "city"=>"j", "state"=>"j", "zip_code"=>"77840", "isCaptain"=>"0", "captains"=>{"age"=>"18", "year_experience"=>"0", "first_available_date(2i)"=>"11", "first_available_date(3i)"=>"16", "first_available_date(1i)"=>"2017", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "sunday"=>"0", "comments"=>""}}, "commit"=>"Sign up"}
+Unpermitted parameter: captains
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'j@j.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "0085141b13523c4e7e02b5f2d83fbcc5ec0f0eeadd780f02810a138c86c392c4"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "encrypted_password", "address_line1", "address_line2", "city", "state", "zip_code", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "j"], ["last_name", "j"], ["email", "j@j.com"], ["encrypted_password", "$2a$10$rZ.9Elxd6mWVxiH/DlHMYuH8NB19UpSRGOp5fFIAC/W9edd/0GOzq"], ["address_line1", "j"], ["address_line2", "j"], ["city", "j"], ["state", "j"], ["zip_code", "77840"], ["created_at", "2017-11-16 03:48:57.320489"], ["updated_at", "2017-11-16 03:48:57.320489"], ["confirmation_token", "n-xrtc1jESqLu-ECdisK"], ["confirmation_sent_at", "2017-11-16 03:48:57.580676"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 317.1ms
+
+Sent mail to j@j.com (3257.2ms)
+Date: Wed, 15 Nov 2017 21:48:57 -0600
+From: noreply@boat-rental-service.herokuapp.com
+Reply-To: noreply@boat-rental-service.herokuapp.com
+To: j@j.com
+Message-ID: <5a0d0aa9e4b46_6d123fcffe9a7410143f0@zhangzauandeAir.mail>
+>>>>>>> finished basic search bar
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
+<<<<<<< HEAD
 <p>Land ho, xxx@xxx.com!</p>
 
 <p>Confirm your account email through the link below:</p>
@@ -4186,12 +4560,86 @@ From: noreply@boat-rental-service.herokuapp.com
 Reply-To: noreply@boat-rental-service.herokuapp.com
 To: gh.akshay@gmail.com
 Message-ID: <5a0e0a058c6af_33513ff81d61e06875950@axy-project-boat-final-final-5675497.mail>
+=======
+<p>Land ho, j@j.com!</p>
+
+<p>Confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=n-xrtc1jESqLu-ECdisK">Confirm my account!</a></p>
+
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3974ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:49:01 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 226ms (Views: 224.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:49:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 243ms (Views: 240.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:49:18 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uwJJFo5sxh5jDrnKDHj1mCgT3qNbQiBe/9vaA8D6WkZcBZZDeyb1eqx524WqQ2rkt5+J5TgAbo0pj8YVpouqJw==", "user"=>{"email"=>"j@j.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "j@j.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 401 Unauthorized in 94ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:49:18 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 213ms (Views: 211.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-15 21:50:32 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (13.8ms)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (28.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 283ms (Views: 280.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-11-15 21:51:10 -0600
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YimWX4TNMNcTkDGSEG9PBxaH1eyiWy5uZsyNTISonP6FLkkKcYcDs9znU922VNB7iQuCqsEZYL2wmJFa4tlsnw==", "user"=>{"first_name"=>"joey", "last_name"=>"chang", "email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "address_line1"=>"j", "address_line2"=>"j", "city"=>"College Station", "state"=>"Texas", "zip_code"=>"77840", "isCaptain"=>"0", "captains"=>{"age"=>"18", "year_experience"=>"0", "first_available_date(2i)"=>"11", "first_available_date(3i)"=>"16", "first_available_date(1i)"=>"2017", "monday"=>"0", "tuesday"=>"0", "wednesday"=>"0", "thursday"=>"0", "friday"=>"0", "saturday"=>"0", "sunday"=>"0", "comments"=>""}}, "commit"=>"Sign up"}
+Unpermitted parameter: captains
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joeychang70529@yahoo.com.tw' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "6663fa85903a4f2a230f60626aca83f726401935940e2b4a609aa851c5f412e2"]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "encrypted_password", "address_line1", "address_line2", "city", "state", "zip_code", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "joey"], ["last_name", "chang"], ["email", "joeychang70529@yahoo.com.tw"], ["encrypted_password", "$2a$10$S.lb93BW0f/9XT54Jqz1BOruRFQAkTMHWTdOpmsQBXJXW.r2W/0xy"], ["address_line1", "j"], ["address_line2", "j"], ["city", "College Station"], ["state", "Texas"], ["zip_code", "77840"], ["created_at", "2017-11-16 03:51:11.060558"], ["updated_at", "2017-11-16 03:51:11.060558"], ["confirmation_token", "a7ykUCDXeNgjqB9wRjxG"], ["confirmation_sent_at", "2017-11-16 03:51:11.063502"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 29.9ms
+
+Sent mail to joeychang70529@yahoo.com.tw (2333.8ms)
+Date: Wed, 15 Nov 2017 21:51:11 -0600
+From: noreply@boat-rental-service.herokuapp.com
+Reply-To: noreply@boat-rental-service.herokuapp.com
+To: joeychang70529@yahoo.com.tw
+Message-ID: <5a0d0b2f1863d_6d123fcffeeadedc144ed@zhangzauandeAir.mail>
+>>>>>>> finished basic search bar
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
+<<<<<<< HEAD
 <p>Land ho, gh.akshay@gmail.com!</p>
 
 <p>Confirm your account email through the link below:</p>
@@ -8894,6 +9342,995 @@ Cannot render console from 165.91.12.153! Allowed networks: 127.0.0.1, ::1, 127.
 ActionController::RoutingError (No route matches [GET] "/uploads/boat_attachment/image/2/fishing-boat-49523_960_720.jpg"):
   actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+=======
+<p>Land ho, joeychang70529@yahoo.com.tw!</p>
+
+<p>Confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=a7ykUCDXeNgjqB9wRjxG">Confirm my account!</a></p>
+
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2464ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:51:13 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 272ms (Views: 270.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/confirmation?confirmation_token=a7ykUCDXeNgjqB9wRjxG" for ::1 at 2017-11-15 21:51:35 -0600
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"a7ykUCDXeNgjqB9wRjxG"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "a7ykUCDXeNgjqB9wRjxG"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-11-16 03:51:35.452450"], ["updated_at", "2017-11-16 03:51:35.453107"], ["id", 4]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:51:35 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 627ms (Views: 625.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:51:47 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p+RxShkX4t8GTKxAwt8qV9iyvbPoVp2GL5M1lRpYDtlA464f7F3Ru8k7zg9k5LUrRz7q9YsU01X5xymDfCn+uA==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "joeychang70529@yahoo.com.tw"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-11-16 03:51:47.859382"], ["current_sign_in_at", "2017-11-16 03:51:47.859382"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2017-11-16 03:51:47.860177"], ["id", 4]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:51:47 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 628ms (Views: 626.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:51:50 -0600
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-11-15 21:51:54 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PKsa06SzjBPRPcnZ2oYP2S7O+onOaoJAQbvuR8V5ymDpMwD+4ifSqldwKXvvGdytQdkClqrSwFupKZjw4L0/uw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:51:54 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 217ms (Views: 216.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:51:57 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 262ms (Views: 257.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:52:06 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1+Q9tSa8G3RQa97MmtFPn+55ovEyQ0gsdRcpCLKXbwaxIza6fjDtn6bnizKWWt85fW2gEMDYl1BIl1jZQiOA+g==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "joeychang70529@yahoo.com.tw"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_created_at", "2017-11-16 03:52:06.861705"], ["updated_at", "2017-11-16 03:52:06.862509"], ["id", 4]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-11-16 03:52:06.868167"], ["sign_in_count", 2], ["updated_at", "2017-11-16 03:52:06.869332"], ["id", 4]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:52:06 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 252ms (Views: 250.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-11-15 21:52:09 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mY8M15mE4N3hJiITmYoupH8eUcK3QMNhmIiYnNbnArNr/S1SWfCjOdL3MrL+52gWU528iYp2RZ6qEerEGxDWbw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2017-11-16 03:52:09.924506"], ["id", 4]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:52:09 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  Rendered home_page/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 239ms (Views: 238.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-15 21:52:11 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 248ms (Views: 246.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-15 21:52:19 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8aS+QeDWqEZ6PfQSCUkX4JiYDcOCtLkza+hiAsgxhTmWXOXsLTl5b3Z9dvJ/MJNLqHXmKVOPrfpObyNOrNQrXw==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "joeychang70529@yahoo.com.tw"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-11-16 03:52:06.868167"], ["current_sign_in_at", "2017-11-16 03:52:19.509866"], ["sign_in_count", 3], ["updated_at", "2017-11-16 03:52:19.511394"], ["id", 4]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 21:52:19 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 237ms (Views: 235.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-15 21:52:22 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (29.6ms)
+  Rendered boats/new.html.erb within layouts/application (33.8ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 321ms (Views: 270.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:05:35 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+...acity) { where ("capacity > ?", "%#{capacity}%") }
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+...capacity > ?", "%#{capacity}%") }
+...                               ^):
+  app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+  app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:07:45 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+...ty) { where ("capacity like ?", "%#{capacity}%") }
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+...acity like ?", "%#{capacity}%") }
+...                               ^):
+  app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+  app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:10:07 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+  scope :capacity, -> (capacity) { where ("capacity > ?", capacity) }
+                                                         ^):
+  app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.4ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:14:43 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+...acity) { where ("capacity > ?", "#{capacity}%") }
+...                               ^
+/Users/zaoyuanchang/RubymineProjects/SE boat-rental/boat-rental-management/app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+..."capacity > ?", "#{capacity}%") }
+...                               ^):
+  app/models/boat.rb:11: syntax error, unexpected ',', expecting ')'
+  app/models/boat.rb:11: syntax error, unexpected ')', expecting '}'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (108.4ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:18:38 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.9ms)[0m  [1mSELECT "boats".* FROM "boats"  ORDER BY created_at DESC[0m
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (16.4ms)
+Completed 200 OK in 811ms (Views: 790.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=Austin&capacity=&commit=Search" for ::1 at 2017-11-15 23:18:48 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"Austin", "capacity"=>"", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."city" = ?[0m  [["city", "Austin"]]
+  Rendered boats/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 340ms (Views: 330.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-15 23:18:58 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (6.1ms)
+  Rendered boats/new.html.erb within layouts/application (10.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 338ms (Views: 303.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-15 23:18:59 -0600
+Processing by BoatsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 317ms (Views: 311.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-15 23:19:00 -0600
+Processing by BoatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.4ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 315ms (Views: 311.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-15 23:19:02 -0600
+Processing by BoatsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.1ms)[0m  SELECT "boats".* FROM "boats"
+  Rendered boats/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 295ms (Views: 293.4ms | ActiveRecord: 0.3ms)
+  [1m[36mBoat Load (5.9ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+
+
+Started GET "/" for ::1 at 2017-11-15 23:19:17 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats"  ORDER BY created_at DESC[0m
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 304ms (Views: 302.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:21:27 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 296ms (Views: 295.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:21:38 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 162ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=&capacity=&commit=Search" for ::1 at 2017-11-15 23:21:52 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"", "capacity"=>"", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  Rendered boats/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 295ms (Views: 293.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:22:49 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 301ms (Views: 299.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:27:39 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 302ms (Views: 300.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/CO" for ::1 at 2017-11-15 23:27:45 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"CO"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&capacity=&state=Colorado&city=Air+Force+Academy&commit=Search" for ::1 at 2017-11-15 23:27:47 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "capacity"=>"", "state"=>"Colorado", "city"=>"Air Force Academy", "commit"=>"Search"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ?[0m  [["state", "Colorado"], ["city", "Air Force Academy"]]
+  Rendered boats/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 307ms (Views: 303.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:29:36 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&capacity=&state=Texas&city=Austin&commit=Search" for ::1 at 2017-11-15 23:29:47 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "capacity"=>"", "state"=>"Texas", "city"=>"Austin", "commit"=>"Search"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ?[0m  [["state", "Texas"], ["city", "Austin"]]
+  Rendered boats/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 397ms (Views: 394.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:31:02 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.4ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 652ms (Views: 649.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:32:20 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.9ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  Rendered home_page/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 317ms (Views: 314.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-15 23:32:25 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (8.2ms)
+  Rendered boats/new.html.erb within layouts/application (12.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 316ms (Views: 312.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:33:03 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-15 23:33:47 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e0ZGq9qL4WkfQDb8n/Pu4iv+aqmXb/lln1F+g9O3NVQX8Os2A/YR2JlF5Byft5kp5E1aczH6nirGP7ko8w8DPw==", "boat"=>{"name"=>"Austin1", "width"=>"1", "depth"=>"1", "height"=>"1", "water"=>"salt water", "capacity"=>"1", "description"=>"in Austin", "ownerid"=>"", "owner_name"=>"", "price"=>"1", "location"=>"AUstin", "state"=>"Texas", "city"=>"Austin", "available_date"=>"11/18/2017,11/22/2017,11/30/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007f9fffb03780 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171115-27922-1sycigt.jpg>, @original_filename="boat3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat3.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Austin1"], ["width", 1], ["depth", 1], ["height", 1], ["water", "salt water"], ["capacity", 1], ["state", "Texas"], ["city", "Austin"], ["description", "in Austin"], ["available_date", "11/18/2017,11/22/2017,11/30/2017"], ["price", 1], ["location", "AUstin"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 05:33:47.137211"], ["updated_at", "2017-11-16 05:33:47.137211"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 1 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "Boat"], ["commontable_id", 1], ["created_at", "2017-11-16 05:33:47.156947"], ["updated_at", "2017-11-16 05:33:47.156947"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat3.jpg"], ["boat_id", 1], ["created_at", "2017-11-16 05:33:47.384281"], ["updated_at", "2017-11-16 05:33:47.384281"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 1 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "BoatAttachment"], ["commontable_id", 1], ["created_at", "2017-11-16 05:33:47.389036"], ["updated_at", "2017-11-16 05:33:47.389036"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/boats/1
+Completed 302 Found in 280ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/boats/1" for ::1 at 2017-11-15 23:33:47 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mCommontator::Thread Load (0.3ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 1], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCommontator::Subscription Load (0.2ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 1]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (29.1ms)
+  Rendered boats/show.html.erb within layouts/application (49.6ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 400ms (Views: 393.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/rent-now-button-ebbad123c3f8a1ccb3fcba04bb3e46a5ae7807d56af3783bcdf2813f31c10b63.png" for ::1 at 2017-11-15 23:33:47 -0600
+
+
+Started GET "/assets/bx_loader-6d46e2cf165a5a0584afba7bc9663da292ee08c97cfc7613de6013ed05be892a.gif" for ::1 at 2017-11-15 23:33:48 -0600
+
+
+Started GET "/assets/controls-257206c4fd6bcee36927eb0ef2ba087b5dfc6c9a18df7f8553878bf847616226.png" for ::1 at 2017-11-15 23:33:48 -0600
+
+
+Started GET "/boats/new" for ::1 at 2017-11-15 23:33:53 -0600
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered boats/_form.html.erb (6.8ms)
+  Rendered boats/new.html.erb within layouts/application (8.5ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 306ms (Views: 297.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:34:17 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-15 23:34:32 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCbi28KzBwnc2P0khriEnvr9o45JsXmTFjkpu2QZpceokE9GG873uFrdL8SG/PNVNU6TVO8kHtxPV+4QRKGTrA==", "boat"=>{"name"=>"austin2", "width"=>"2", "depth"=>"2", "height"=>"2", "water"=>"salt water", "capacity"=>"22", "description"=>"austin 2", "ownerid"=>"", "owner_name"=>"", "price"=>"2", "location"=>"austin", "state"=>"Texas", "city"=>"Austin", "available_date"=>"11/30/2017,11/29/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007fa00068d3f8 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171115-27922-12z2o6i.jpg>, @original_filename="boat4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat4.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "austin2"], ["width", 2], ["depth", 2], ["height", 2], ["water", "salt water"], ["capacity", 22], ["state", "Texas"], ["city", "Austin"], ["description", "austin 2"], ["available_date", "11/30/2017,11/29/2017"], ["price", 2], ["location", "austin"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 05:34:32.791499"], ["updated_at", "2017-11-16 05:34:32.791499"]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 2 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "Boat"], ["commontable_id", 2], ["created_at", "2017-11-16 05:34:32.794805"], ["updated_at", "2017-11-16 05:34:32.794805"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["image", "boat4.jpg"], ["boat_id", 2], ["created_at", "2017-11-16 05:34:32.944829"], ["updated_at", "2017-11-16 05:34:32.944829"]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 2 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "BoatAttachment"], ["commontable_id", 2], ["created_at", "2017-11-16 05:34:32.948757"], ["updated_at", "2017-11-16 05:34:32.948757"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/boats/2
+Completed 302 Found in 175ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-11-15 23:34:32 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mCommontator::Thread Load (0.1ms)[0m  SELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1  [["commontable_id", 2], ["commontable_type", "Boat"]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCommontator::Subscription Load (0.1ms)[0m  SELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?[0m  [["thread_id", 3]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (8.3ms)
+  Rendered boats/show.html.erb within layouts/application (16.1ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 360ms (Views: 356.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-15 23:34:35 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (5.6ms)
+  Rendered boats/new.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 301ms (Views: 290.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:34:57 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-15 23:35:18 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ecQSGGMPJVfKwNLkzffrnpDqnucOVYN8YG2KalAko2EVcr+FunLV5kzFAATNs5xVX1muPajA5DM5A03BcJyVCg==", "boat"=>{"name"=>"college station 1", "width"=>"6", "depth"=>"6", "height"=>"6", "water"=>"salt water", "capacity"=>"6", "description"=>"6", "ownerid"=>"", "owner_name"=>"", "price"=>"6", "location"=>"6", "state"=>"Texas", "city"=>"College Station", "available_date"=>"11/21/2017,11/23/2017,11/25/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007f9ffb63a5b8 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171115-27922-r09mjq.jpg>, @original_filename="boat5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat5.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "college station 1"], ["width", 6], ["depth", 6], ["height", 6], ["water", "salt water"], ["capacity", 6], ["state", "Texas"], ["city", "College Station"], ["description", "6"], ["available_date", "11/21/2017,11/23/2017,11/25/2017"], ["price", 6], ["location", "6"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 05:35:18.758958"], ["updated_at", "2017-11-16 05:35:18.758958"]]
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 3 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "Boat"], ["commontable_id", 3], ["created_at", "2017-11-16 05:35:18.763560"], ["updated_at", "2017-11-16 05:35:18.763560"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat5.jpg"], ["boat_id", 3], ["created_at", "2017-11-16 05:35:18.914495"], ["updated_at", "2017-11-16 05:35:18.914495"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 3 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "BoatAttachment"], ["commontable_id", 3], ["created_at", "2017-11-16 05:35:18.918569"], ["updated_at", "2017-11-16 05:35:18.918569"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/boats/3
+Completed 302 Found in 175ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-11-15 23:35:18 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mCommontator::Thread Load (0.1ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 3], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCommontator::Subscription Load (0.1ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 5]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (8.0ms)
+  Rendered boats/show.html.erb within layouts/application (15.8ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 355ms (Views: 351.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:35:35 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.4ms)[0m  [1mSELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  Rendered home_page/index.html.erb within layouts/application (11.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 313ms (Views: 310.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:35:45 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Texas&city=Austin&capacity=&commit=Search" for ::1 at 2017-11-15 23:35:54 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Texas", "city"=>"Austin", "capacity"=>"", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ?[0m  [["state", "Texas"], ["city", "Austin"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  Rendered boats/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 309ms (Views: 307.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-15 23:35:59 -0600
+Processing by BoatsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.4ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 311ms (Views: 306.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:36:01 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  Rendered home_page/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 294ms (Views: 292.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-15 23:36:08 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Texas&city=College+Station&capacity=&commit=Search" for ::1 at 2017-11-15 23:37:00 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Texas", "city"=>"College Station", "capacity"=>"", "commit"=>"Search"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ?[0m  [["state", "Texas"], ["city", "College Station"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 311ms (Views: 307.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:41:42 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.4ms)[0m  [1mSELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  Rendered home_page/index.html.erb within layouts/application (9.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 612ms (Views: 609.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-15 23:41:45 -0600
+Processing by BoatsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 308ms (Views: 300.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-11-15 23:41:47 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mCommontator::Thread Load (0.2ms)[0m  SELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1  [["commontable_id", 3], ["commontable_type", "Boat"]]
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCommontator::Subscription Load (0.1ms)[0m  SELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?[0m  [["thread_id", 5]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (15.4ms)
+  Rendered boats/show.html.erb within layouts/application (28.2ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 318ms (Views: 312.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-11-15 23:41:50 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mCommontator::Thread Load (0.2ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 2], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCommontator::Subscription Load (0.1ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 3]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (10.6ms)
+  Rendered boats/show.html.erb within layouts/application (21.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 311ms (Views: 306.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-11-15 23:41:53 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mCommontator::Thread Load (0.2ms)[0m  SELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1  [["commontable_id", 2], ["commontable_type", "Boat"]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCommontator::Subscription Load (0.1ms)[0m  SELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?[0m  [["thread_id", 3]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (8.5ms)
+  Rendered boats/show.html.erb within layouts/application (23.4ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 328ms (Views: 316.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/boats/1" for ::1 at 2017-11-15 23:41:55 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mCommontator::Thread Load (0.1ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 1], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCommontator::Subscription Load (0.1ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 1]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (7.8ms)
+  Rendered boats/show.html.erb within layouts/application (16.8ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 314ms (Views: 308.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-11-15 23:41:57 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mCommontator::Thread Load (0.2ms)[0m  SELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1  [["commontable_id", 3], ["commontable_type", "Boat"]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCommontator::Subscription Load (0.2ms)[0m  SELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?[0m  [["thread_id", 5]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (11.9ms)
+  Rendered boats/show.html.erb within layouts/application (24.4ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 355ms (Views: 346.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:42:00 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.6ms)[0m  SELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered home_page/index.html.erb within layouts/application (13.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 316ms (Views: 312.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-15 23:46:56 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats"  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  Rendered home_page/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 626ms (Views: 624.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/AK" for ::1 at 2017-11-16 00:00:04 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"AK"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Alaska&city=Adak&capacity=9&commit=Search" for ::1 at 2017-11-16 00:00:09 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Alaska", "city"=>"Adak", "capacity"=>"9", "commit"=>"Search"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ? AND (capacity > 9)[0m  [["state", "Alaska"], ["city", "Adak"]]
+  Rendered boats/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 639ms (Views: 635.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-16 00:10:05 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Texas&city=Austin&capacity=9&commit=Search" for ::1 at 2017-11-16 00:10:14 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Texas", "city"=>"Austin", "capacity"=>"9", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ? AND (capacity > 9)[0m  [["state", "Texas"], ["city", "Austin"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  Rendered boats/index.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 701ms (Views: 698.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93capacity=9&commit=Search" for ::1 at 2017-11-16 00:10:28 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓capacity=9", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (6.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 344ms (Views: 341.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93capacity=9&commit=Search" for ::1 at 2017-11-16 00:10:32 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓capacity=9", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats"[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (6.4ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 313ms (Views: 311.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:20:30 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (1.0ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (36.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (21.6ms)
+Completed 200 OK in 785ms (Views: 762.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:21:07 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (6.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 287ms (Views: 286.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=&capacity=5&commit=Search" for ::1 at 2017-11-16 00:21:11 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"", "capacity"=>"5", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats" WHERE (capacity > 5)
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 328ms (Views: 316.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/2" for ::1 at 2017-11-16 00:21:16 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mCommontator::Thread Load (0.1ms)[0m  SELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1  [["commontable_id", 2], ["commontable_type", "Boat"]]
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCommontator::Subscription Load (0.2ms)[0m  SELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?[0m  [["thread_id", 3]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (21.6ms)
+  Rendered boats/show.html.erb within layouts/application (46.7ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 338ms (Views: 330.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/boats/3" for ::1 at 2017-11-16 00:21:19 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.3ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mCommontator::Thread Load (0.1ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 3], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCommontator::Subscription Load (0.1ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 5]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (8.1ms)
+  Rendered boats/show.html.erb within layouts/application (18.2ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 330ms (Views: 321.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=&capacity=5&commit=Search" for ::1 at 2017-11-16 00:23:13 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"", "capacity"=>"5", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats" WHERE (capacity > 5 OR capacity = 5)
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (23.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 346ms (Views: 313.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:23:16 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.3ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 6[0m
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 319ms (Views: 315.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=&capacity=6&commit=Search" for ::1 at 2017-11-16 00:23:20 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"", "capacity"=>"6", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE (capacity > 6 OR capacity = 6)[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 321ms (Views: 319.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=&city=&capacity=7&commit=Search" for ::1 at 2017-11-16 00:23:26 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"", "city"=>"", "capacity"=>"7", "commit"=>"Search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE (capacity > 7 OR capacity = 7)[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  Rendered boats/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 322ms (Views: 320.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2017-11-16 00:29:43 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+>>>>>>> finished basic search bar
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
   actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
@@ -8915,6 +10352,7 @@ ActionController::RoutingError (No route matches [GET] "/uploads/boat_attachment
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -10314,3 +11752,123 @@ Processing by HomePageController#index as HTML
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered shared/_navbar.html.erb (16.5ms)
 Completed 200 OK in 699ms (Views: 681.4ms | ActiveRecord: 1.3ms)
+=======
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/zaoyuanchang/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (117.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (203.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:29:52 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (87.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (36.6ms)
+Completed 200 OK in 2290ms (Views: 2277.9ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-11-16 00:29:58 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EU578iTYUkaKL1FWyOVy8cXcn/1Z0pxuAj5OIbrGGyJ9+NZv/aWi9wwqg7bIoQU6Cm+vJ/9H+yFbUImKmn4tSQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:29:58 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (6.9ms)
+  Rendered shared/_navbar.html.erb (4.2ms)
+Completed 200 OK in 231ms (Views: 230.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-16 00:30:02 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (63.3ms)
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (134.6ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 605ms (Views: 561.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-16 00:30:29 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (11.9ms)
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 335ms (Views: 332.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-16 00:32:24 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (15.4ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 360ms (Views: 359.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-16 00:36:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 620ms (Views: 615.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 00:36:28 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (7.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 297ms (Views: 294.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/TX" for ::1 at 2017-11-16 00:36:40 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"TX"}
+Completed 200 OK in 172ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Texas&city=Austin&capacity=&commit=Search" for ::1 at 2017-11-16 00:36:47 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Texas", "city"=>"Austin", "capacity"=>"", "commit"=>"Search"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-16 00:36:47 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 305ms (Views: 303.3ms | ActiveRecord: 0.0ms)
+>>>>>>> finished basic search bar

@@ -6,6 +6,11 @@ class BoatsController < ApplicationController
   # GET /boats.json
   def index
     @boats = Boat.all
+    #filtering, may suffer from SQL injection.
+    #https://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/
+    @boats = @boats.state(params[:state]) if params[:state].present?
+    @boats = @boats.city(params[:city]) if params[:city].present?
+    @boats = @boats.capacity(params[:capacity]) if params[:capacity].present?
   end
 
   # GET /boats/1
