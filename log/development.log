@@ -11871,4 +11871,1028 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
   Rendered shared/_navbar.html.erb (0.7ms)
 Completed 200 OK in 305ms (Views: 303.3ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
 >>>>>>> finished basic search bar
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_cached_votes_down' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_cached_votes_down' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_cached_votes_up' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_cached_votes_up' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_thread_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_thread_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_comments_on_c_id_and_c_type_and_t_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_comments_on_c_id_and_c_type_and_t_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_subscriptions_on_thread_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_subscriptions_on_thread_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_subscriptions_on_s_id_and_s_type_and_t_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_subscriptions_on_s_id_and_s_type_and_t_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_commontator_threads_on_c_id_and_c_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_commontator_threads_on_c_id_and_c_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2017-11-16 12:37:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (116.3ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+Completed 200 OK in 2969ms (Views: 2930.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-16 12:37:15 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (120.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 390ms (Views: 367.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-16 12:37:24 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R7NoZF2GpEXjZlsw5MXFIicFpmkPlLkIEolc4DpSRo9zNKW7UmFqL6si7jxTH74iQw7iAVEEMqjDTut6+5YrVQ==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "joeychang70529@yahoo.com.tw"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-11-16 03:52:19.509866"], ["current_sign_in_at", "2017-11-16 18:37:25.050360"], ["sign_in_count", 4], ["updated_at", "2017-11-16 18:37:25.051212"], ["id", 4]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/boats?utf8=%E2%9C%93&state=Texas&city=Austin&capacity=&commit=Search
+Completed 302 Found in 152ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/boats?utf8=%E2%9C%93&state=Texas&city=Austin&capacity=&commit=Search" for ::1 at 2017-11-16 12:37:25 -0600
+Processing by BoatsController#index as HTML
+  Parameters: {"utf8"=>"✓", "state"=>"Texas", "city"=>"Austin", "capacity"=>"", "commit"=>"Search"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."state" = ? AND "boats"."city" = ?[0m  [["state", "Texas"], ["city", "Austin"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  Rendered boats/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 300ms (Views: 296.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 12:37:27 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (29.0ms)
+  Rendered boats/new.html.erb within layouts/application (36.6ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 334ms (Views: 323.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/AK" for ::1 at 2017-11-16 12:37:44 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"AK"}
+Completed 200 OK in 151ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-16 12:38:11 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8DtXp+6NMoUqfCQJw+p2283AZFH40/viH1uPM1S+xMtASIH2mZQqTtDC5poL1Wi4weduAZKaNcZXImHFGxA1vw==", "boat"=>{"name"=>"aws", "width"=>"1", "depth"=>"1", "height"=>"1", "water"=>"salt water", "capacity"=>"1", "description"=>"1", "ownerid"=>"", "owner_name"=>"", "price"=>"1", "location"=>"1", "state"=>"Alaska", "city"=>"Adak", "available_date"=>"11/29/2017,11/30/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007fe124530608 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171116-29513-13wpl41.jpg>, @original_filename="boat5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat5.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aws"], ["width", 1], ["depth", 1], ["height", 1], ["water", "salt water"], ["capacity", 1], ["state", "Alaska"], ["city", "Adak"], ["description", "1"], ["available_date", "11/29/2017,11/30/2017"], ["price", 1], ["location", "1"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 18:38:11.429627"], ["updated_at", "2017-11-16 18:38:11.429627"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCommontator::Thread Exists (2.0ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 4 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "Boat"], ["commontable_id", 4], ["created_at", "2017-11-16 18:38:11.465067"], ["updated_at", "2017-11-16 18:38:11.465067"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat5.jpg"], ["boat_id", 4], ["created_at", "2017-11-16 18:38:11.748138"], ["updated_at", "2017-11-16 18:38:11.748138"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 4 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "BoatAttachment"], ["commontable_id", 4], ["created_at", "2017-11-16 18:38:11.752183"], ["updated_at", "2017-11-16 18:38:11.752183"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/boats/4
+Completed 302 Found in 354ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/boats/4" for ::1 at 2017-11-16 12:38:11 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBoat Load (0.1ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  [1m[36mCommontator::Thread Load (0.3ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 4], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCommontator::Subscription Load (2.3ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 4], ["subscriber_type", "User"], ["thread_id", 7]]
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 7]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (30.7ms)
+  Rendered boats/show.html.erb within layouts/application (47.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 638ms (Views: 629.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 12:39:35 -0600
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.2ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/boats_controller.rb:24:in `new'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.2ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 12:41:29 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/boats_controller.rb:24:in `new'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.5ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 13:16:31 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 1.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/boats_controller.rb:24:in `new'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (118.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (213.6ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 13:16:34 -0600
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/boats_controller.rb:24:in `new'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.6ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 13:16:55 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/boats_controller.rb:24:in `new'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:38:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:11:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (120.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (230.4ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:39:03 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:39:04 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.4ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:46:21 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:49:35 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:51:36 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:51:38 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:53:00 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:53:45 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 13:54:50 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:01:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (112.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (188.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:01:22 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:05:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (128.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (214.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:19:54 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (132.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (219.9ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:20:27 -0600
+Processing by HomePageController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant CarrierWave::Storage::Fog):
+  app/uploaders/image_uploader.rb:12:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:4:in `<top (required)>'
+  app/models/boat.rb:2:in `<class:Boat>'
+  app/models/boat.rb:1:in `<top (required)>'
+  app/controllers/home_page_controller.rb:4:in `index'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-16 14:47:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 6
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 4]]
+  Rendered home_page/index.html.erb within layouts/application (106.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_navbar.html.erb (42.8ms)
+Completed 200 OK in 3144ms (Views: 3118.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 14:47:50 -0600
+Processing by BoatsController#new as HTML
+  Rendered boats/_form.html.erb (121.6ms)
+  Rendered boats/new.html.erb within layouts/application (125.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 445ms (Views: 433.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/AK" for ::1 at 2017-11-16 14:48:08 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"AK"}
+Completed 200 OK in 182ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-16 14:48:21 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4sGG7cOjA/PxfD/+w8l9H7pv2OKQAPdwYmAEB+ehRwJSslC8tLobOAvC/W0L9mN8tkjSsvpJOVQqGerxqA+2dg==", "boat"=>{"name"=>"boat1", "width"=>"1", "depth"=>"1", "height"=>"1", "water"=>"salt water", "capacity"=>"1", "description"=>"1", "ownerid"=>"", "owner_name"=>"", "price"=>"1", "location"=>"1", "state"=>"Alaska", "city"=>"Akiachak", "available_date"=>"11/29/2017,11/27/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007ff617fd6de8 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171116-30440-1qjan87.jpg>, @original_filename="boat5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat5.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+Unpermitted parameter: owner_name
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "boat1"], ["width", 1], ["depth", 1], ["height", 1], ["water", "salt water"], ["capacity", 1], ["state", "Alaska"], ["city", "Akiachak"], ["description", "1"], ["available_date", "11/29/2017,11/27/2017"], ["price", 1], ["location", "1"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 20:48:21.860790"], ["updated_at", "2017-11-16 20:48:21.860790"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCommontator::Thread Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 5 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "Boat"], ["commontable_id", 5], ["created_at", "2017-11-16 20:48:21.901084"], ["updated_at", "2017-11-16 20:48:21.901084"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat5.jpg"], ["boat_id", 5], ["created_at", "2017-11-16 20:48:22.154023"], ["updated_at", "2017-11-16 20:48:22.154023"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCommontator::Thread Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 5 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "BoatAttachment"], ["commontable_id", 5], ["created_at", "2017-11-16 20:48:22.158577"], ["updated_at", "2017-11-16 20:48:22.158577"]]
+  [1m[36m (8.6ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 4795ms (ActiveRecord: 13.4ms)
+
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AllAccessDisabled</Code><Message>All access to this object has been disabled</Message><RequestId>FD6E3581999205C0</RequestId><HostId>W+7d14NfrGYw149KG7itLZe0kgqATxu5vws6MCeN+WXLNUtEZwGqQ6661ZFFiS+HD3k31aEhtjE=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 16 Nov 2017 20:48:25 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "W+7d14NfrGYw149KG7itLZe0kgqATxu5vws6MCeN+WXLNUtEZwGqQ6661ZFFiS+HD3k31aEhtjE="
+    "x-amz-request-id" => "FD6E3581999205C0"
+  }
+  :host          => "asset.s3.amazonaws.com"
+  :local_address => "192.168.1.121"
+  :local_port    => 53158
+  :path          => "/uploads/boat_attachment/image/5/boat5.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "54.231.72.211"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  app/controllers/boats_controller.rb:40:in `block (2 levels) in create'
+  app/controllers/boats_controller.rb:39:in `each'
+  app/controllers/boats_controller.rb:39:in `block in create'
+  app/controllers/boats_controller.rb:37:in `create'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.7ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 14:52:43 -0600
+Processing by BoatsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered boats/_form.html.erb (5.3ms)
+  Rendered boats/new.html.erb within layouts/application (6.5ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 348ms (Views: 277.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/cities/IA" for ::1 at 2017-11-16 14:52:55 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"IA"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-16 14:53:03 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YkwktrHOni61vsqQJC+aBE0oAL5c7sKdJSl5IzgvGXzSP/LnxteG5U8ACAPsEIRnQQ8K7janDLltUJfVd4HoCA==", "boat"=>{"name"=>"1", "width"=>"1", "depth"=>"1", "height"=>"1", "water"=>"salt water", "capacity"=>"1", "description"=>"1", "ownerid"=>"", "owner_name"=>"", "price"=>"1", "location"=>"1", "state"=>"Iowa", "city"=>"Albert City", "available_date"=>"11/29/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007ff616198de0 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171116-30440-v515fy.jpg>, @original_filename="boat3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat3.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "1"], ["width", 1], ["depth", 1], ["height", 1], ["water", "salt water"], ["capacity", 1], ["state", "Iowa"], ["city", "Albert City"], ["description", "1"], ["available_date", "11/29/2017"], ["price", 1], ["location", "1"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 20:53:03.882432"], ["updated_at", "2017-11-16 20:53:03.882432"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mCommontator::Thread Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 6 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "Boat"], ["commontable_id", 6], ["created_at", "2017-11-16 20:53:03.890611"], ["updated_at", "2017-11-16 20:53:03.890611"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "boat3.jpg"], ["boat_id", 6], ["created_at", "2017-11-16 20:53:04.000044"], ["updated_at", "2017-11-16 20:53:04.000044"]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCommontator::Thread Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 5 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commontable_type", "BoatAttachment"], ["commontable_id", 5], ["created_at", "2017-11-16 20:53:04.004714"], ["updated_at", "2017-11-16 20:53:04.004714"]]
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 4169ms (ActiveRecord: 7.3ms)
+
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AllAccessDisabled</Code><Message>All access to this object has been disabled</Message><RequestId>704FC381B533EDDE</RequestId><HostId>rbgDXTWu4o2udtQJHXR2MHBNedKfBvcZpGCCIkiXU+kASoSO/3e2gWuEzkjkdLF/r6eOMJA3Cfc=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 16 Nov 2017 20:53:06 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "rbgDXTWu4o2udtQJHXR2MHBNedKfBvcZpGCCIkiXU+kASoSO/3e2gWuEzkjkdLF/r6eOMJA3Cfc="
+    "x-amz-request-id" => "704FC381B533EDDE"
+  }
+  :host          => "asset.s3.amazonaws.com"
+  :local_address => "192.168.1.121"
+  :local_port    => 53228
+  :path          => "/https%3A//s3.us-east-2.amazonaws.com/boat-rental-bucket/5/boat3.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "52.216.99.27"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  app/controllers/boats_controller.rb:40:in `block (2 levels) in create'
+  app/controllers/boats_controller.rb:39:in `each'
+  app/controllers/boats_controller.rb:39:in `block in create'
+  app/controllers/boats_controller.rb:37:in `create'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.1ms)
+
+
+Started GET "/cities/IN" for ::1 at 2017-11-16 14:53:53 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"IN"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-16 14:54:02 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YkwktrHOni61vsqQJC+aBE0oAL5c7sKdJSl5IzgvGXzSP/LnxteG5U8ACAPsEIRnQQ8K7janDLltUJfVd4HoCA==", "boat"=>{"name"=>"1", "width"=>"1", "depth"=>"1", "height"=>"1", "water"=>"salt water", "capacity"=>"1", "description"=>"1", "ownerid"=>"", "owner_name"=>"", "price"=>"1", "location"=>"1", "state"=>"Indiana", "city"=>"Alamo", "available_date"=>"11/29/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007ff61b8e9d88 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171116-30440-1x5a6gv.jpg>, @original_filename="boat4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat4.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "1"], ["width", 1], ["depth", 1], ["height", 1], ["water", "salt water"], ["capacity", 1], ["state", "Indiana"], ["city", "Alamo"], ["description", "1"], ["available_date", "11/29/2017"], ["price", 1], ["location", "1"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 20:54:02.903559"], ["updated_at", "2017-11-16 20:54:02.903559"]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 7 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "Boat"], ["commontable_id", 7], ["created_at", "2017-11-16 20:54:02.911359"], ["updated_at", "2017-11-16 20:54:02.911359"]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["image", "boat4.jpg"], ["boat_id", 7], ["created_at", "2017-11-16 20:54:03.081481"], ["updated_at", "2017-11-16 20:54:03.081481"]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 5 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "BoatAttachment"], ["commontable_id", 5], ["created_at", "2017-11-16 20:54:03.087748"], ["updated_at", "2017-11-16 20:54:03.087748"]]
+  [1m[35m (2.6ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5545ms (ActiveRecord: 11.4ms)
+
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AllAccessDisabled</Code><Message>All access to this object has been disabled</Message><RequestId>87C2BFB437E8F6B0</RequestId><HostId>Rn0fvfEsIDF1Pm5VAZ9KHkey0cS68TsAY73LbxOSxj6NxK3STGzqDLnXuKo87jvdMvEXyObcRtM=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 16 Nov 2017 20:54:07 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "Rn0fvfEsIDF1Pm5VAZ9KHkey0cS68TsAY73LbxOSxj6NxK3STGzqDLnXuKo87jvdMvEXyObcRtM="
+    "x-amz-request-id" => "87C2BFB437E8F6B0"
+  }
+  :host          => "asset.s3.amazonaws.com"
+  :local_address => "192.168.1.121"
+  :local_port    => 53276
+  :path          => "/https%3A//s3.us-east-2.amazonaws.com/boat-rental-bucket/asset/boat4.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "52.216.96.19"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  app/controllers/boats_controller.rb:40:in `block (2 levels) in create'
+  app/controllers/boats_controller.rb:39:in `each'
+  app/controllers/boats_controller.rb:39:in `block in create'
+  app/controllers/boats_controller.rb:37:in `create'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.3ms)
+
+
+Started GET "/boats/new" for ::1 at 2017-11-16 15:04:06 -0600
+Processing by BoatsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered boats/_form.html.erb (7.3ms)
+  Rendered boats/new.html.erb within layouts/application (11.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 788ms (Views: 695.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cities/AK" for ::1 at 2017-11-16 15:04:18 -0600
+Processing by ApplicationController#cities as */*
+  Parameters: {"state"=>"AK"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boats" for ::1 at 2017-11-16 15:04:28 -0600
+Processing by BoatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WLB75KNRCKTXV7gmq2QtiFV+zY3Rw3E6q2U7g7RvIUHow6211EgQby3perVjWzPrWVnH3buKvx7jHNV1+8HQNQ==", "boat"=>{"name"=>"3", "width"=>"3", "depth"=>"3", "height"=>"3", "water"=>"salt water", "capacity"=>"3", "description"=>"3", "ownerid"=>"", "owner_name"=>"", "price"=>"3", "location"=>"3", "state"=>"Alaska", "city"=>"Adak", "available_date"=>"11/28/2017"}, "boat_attachments"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x007ff61aa413d0 @tempfile=#<Tempfile:/var/folders/2p/bk6tk_t94ms8_1d248n2fdjm0000gn/T/RackMultipart20171116-30440-maji4y.jpg>, @original_filename="boat3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"boat_attachments[image][]\"; filename=\"boat3.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Boat"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Unpermitted parameter: owner_name
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "boats" ("name", "width", "depth", "height", "water", "capacity", "state", "city", "description", "available_date", "price", "location", "owner_name", "ownerid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "3"], ["width", 3], ["depth", 3], ["height", 3], ["water", "salt water"], ["capacity", 3], ["state", "Alaska"], ["city", "Adak"], ["description", "3"], ["available_date", "11/28/2017"], ["price", 3], ["location", "3"], ["owner_name", "joey chang"], ["ownerid", 4], ["created_at", "2017-11-16 21:04:28.415179"], ["updated_at", "2017-11-16 21:04:28.415179"]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 8 AND "commontator_threads"."commontable_type" = 'Boat') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "Boat"], ["commontable_id", 8], ["created_at", "2017-11-16 21:04:28.421062"], ["updated_at", "2017-11-16 21:04:28.421062"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boat_attachments" ("image", "boat_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["image", "boat3.jpg"], ["boat_id", 8], ["created_at", "2017-11-16 21:04:28.589518"], ["updated_at", "2017-11-16 21:04:28.589518"]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT  "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCommontator::Thread Exists (0.1ms)[0m  SELECT  1 AS one FROM "commontator_threads" WHERE ("commontator_threads"."commontable_id" = 5 AND "commontator_threads"."commontable_type" = 'BoatAttachment') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "commontator_threads" ("commontable_type", "commontable_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["commontable_type", "BoatAttachment"], ["commontable_id", 5], ["created_at", "2017-11-16 21:04:28.595060"], ["updated_at", "2017-11-16 21:04:28.595060"]]
+  [1m[35m (5.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4556ms (ActiveRecord: 9.6ms)
+
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AllAccessDisabled</Code><Message>All access to this object has been disabled</Message><RequestId>93FF3DA8BBE70ABD</RequestId><HostId>65NMGO5KSCGLANdUCppdgAq0Cq6Ym7Zk7xR4lRPFAEwCGRViWGKYYKcCUNRKdmV3kiIhV/8sSWk=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 16 Nov 2017 21:04:32 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "65NMGO5KSCGLANdUCppdgAq0Cq6Ym7Zk7xR4lRPFAEwCGRViWGKYYKcCUNRKdmV3kiIhV/8sSWk="
+    "x-amz-request-id" => "93FF3DA8BBE70ABD"
+  }
+  :host          => "asset.s3.amazonaws.com"
+  :local_address => "192.168.1.121"
+  :local_port    => 53424
+  :path          => "/uploads/boat_attachment/image/5/boat3.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "52.216.16.40"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  app/controllers/boats_controller.rb:40:in `block (2 levels) in create'
+  app/controllers/boats_controller.rb:39:in `each'
+  app/controllers/boats_controller.rb:39:in `block in create'
+  app/controllers/boats_controller.rb:37:in `create'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.2ms)
+>>>>>>> s3 v1
