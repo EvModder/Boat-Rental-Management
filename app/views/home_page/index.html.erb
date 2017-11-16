@@ -10,12 +10,16 @@
 Feature Boats:
 
 <div class="boat_panel" >
-  <% @boats.limit(6).each_slice(3).each do |group| %>
+&nbsp;
+&nbsp;
+  <% @boats.limit(8).each_slice(4).each do |group| %>
       <% group.each do |boat| %>
+      &nbsp;
           <% if boat.id !=nil %>
-              <%= link_to image_tag(boat.boat_attachments[0].image.url, :width=>"200"), boat %>
+              <%= link_to image_tag(boat.boat_attachments[0].image.url, height: 200, width: 300,:style => "border: 2px solid white"), boat %>
           <% end %>
       <% end %>
+      <br>
       <br>
   <% end %>
 </div>
