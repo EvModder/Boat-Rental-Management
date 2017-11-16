@@ -2,25 +2,33 @@
 
 <h1>Listing Boats</h1>
 
-<table>
+<table style="width:50%">
   <thead>
     <tr>
       <th>Name</th>
+      &nbsp;
       <th>Description</th>
+      &nbsp;
       <th>Image</th>
+      &nbsp;
       <th colspan="3"></th>
     </tr>
   </thead>
-
+<br>
   <tbody>
     <% @boats.each do |boat| %>
       <tr>
         <td><%= boat.name %></td>
+        &nbsp;
         <td><%= boat.description %></td>
+        &nbsp;
         <td><%= image_tag boat.boat_attachments[0].image.thumb.url %></td>
+        &nbsp;
         <td><%= link_to 'Details', boat %></td>
         <% if boat.ownerid==current_user.id %>
+        &nbsp;
         <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+        &nbsp;
         <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
