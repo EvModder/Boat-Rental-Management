@@ -18,9 +18,17 @@
       <%= f.label :Date_Required, class: "col-sm-2 control-label" %>
         <div class="col-sm-6">
             <div id="datepicker">
+              <script type="text/javascript">
+                  $('#datepicker').on('changeDate', function() {
+                      $('#date_required').val(
+                          $('#datepicker').datepicker('getFormattedDate')
+                      );
+                  });
+              </script>
             </div>
 
         </div>
+      <input type="hidden" id="date_required" name="rent[date_required]">
     </div>
     </br>
 

@@ -1,6 +1,13 @@
 # Skeleton for this code taken from a SO post.
 
 class UsersController < ApplicationController
+
+  def my_boats
+    @boats = Boat.where(ownerid: current_user.id)
+  end
+
+
+
   def create
     @user = User.new(user_params)
 

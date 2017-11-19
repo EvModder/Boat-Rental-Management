@@ -1,2 +1,42 @@
-<h1>Rents#index</h1>
-<p>Find me in app/views/rents/index.html.erb</p>
+<h1>Rent Requests</h1>
+<p id="notice"><%= notice %></p>
+
+
+<table style="width:50%">
+  <thead>
+  <tr>
+    <th>Renter Name</th>
+    &nbsp;
+    <th>Comment</th>
+    &nbsp;
+    <th>Date Required</th>
+
+    <th>Approve?</th>
+    &nbsp;
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+  <br>
+  <tr>
+  <% @rents.each do |rent| %>
+      <tr>
+        <td><%= rent.user_name %></td>
+        &nbsp;
+        <td><%= rent.comments %></td>
+
+        <td><%= rent.date_required %></td>
+
+        <td><input type="radio" name="with_captain" value="yes"> Yes
+        <input type="radio" name="with_captain" value="no"> No</td>
+        &nbsp;
+      </tr>
+  <% end %>
+  <p>
+
+  </p>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat', new_boat_path %>

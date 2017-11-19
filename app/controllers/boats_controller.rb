@@ -27,6 +27,10 @@ class BoatsController < ApplicationController
     @boat_attachment = @boat.boat_attachments.build
   end
 
+  def show_rents(id)
+    @rents = Rent.where(boatid: id)
+  end
+
   # GET /boats/1/edit
   def edit
   end

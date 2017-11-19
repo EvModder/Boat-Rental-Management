@@ -1,5 +1,6 @@
 class RentsController < ApplicationController
   def index
+    @rents = Rent.where(boat_id: params[:boat_id])
   end
 
   def new
@@ -20,6 +21,7 @@ class RentsController < ApplicationController
     @rent = Rent.new(rent_params)
     @rent.boat_id = session[:boat_id]
     @rent.user_id = current_user.id
+    @rent.user_name = current_user.first_name + ' ' + current_user.last_name
     # Save the object
     if @rent.save
       # If save succeeds, redirect to the index action

@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   #boat renting
   get "boats/rent" => "boats#rent"
 
+  get 'users/my_boats' => "users#my_boats"
+
   
 
   get 'cities/:state', to: 'application#cities'
