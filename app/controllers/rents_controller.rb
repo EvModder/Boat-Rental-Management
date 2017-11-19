@@ -22,6 +22,7 @@ class RentsController < ApplicationController
     @rent.boat_id = session[:boat_id]
     @rent.user_id = current_user.id
     @rent.user_name = current_user.first_name + ' ' + current_user.last_name
+    @rent.approved = false
     # Save the object
     if @rent.save
       # If save succeeds, redirect to the index action

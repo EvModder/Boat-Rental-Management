@@ -6,6 +6,10 @@ class UsersController < ApplicationController
     @boats = Boat.where(ownerid: current_user.id)
   end
 
+  def my_rents
+    @rents = Rent.where(user_id: current_user.id)
+  end
+
 
 
   def create

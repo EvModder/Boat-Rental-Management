@@ -20178,3 +20178,475 @@ Processing by RentsController#index as HTML
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered shared/_navbar.html.erb (2.3ms)
 Completed 200 OK in 319ms (Views: 317.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:13:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[35mRent Load (0.4ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (17.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (22.8ms)
+Completed 200 OK in 1428ms (Views: 1392.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:17:01 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[35mRent Load (0.2ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (15.4ms)
+Completed 200 OK in 292ms (Views: 287.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:17:03 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/my_rents.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    16:   </thead>
+    17:   <br>
+    18:   <tbody>
+    19:   <% @boats.each do |boat| %>
+    20:       <tr>
+    21:         <td><%= boat.name %></td>
+    22:         &nbsp;
+  app/views/users/my_rents.html.erb:19:in `_app_views_users_my_rents_html_erb___4544825362272564931_70222871161260'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.8ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:17:32 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRent Load (0.8ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."userid" = 1
+  Rendered users/my_rents.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: rents.userid: SELECT "rents".* FROM "rents" WHERE "rents"."userid" = 1):
+    16:   </thead>
+    17:   <br>
+    18:   <tbody>
+    19:   <% @rents.each do |rent| %>
+    20:       <tr>
+    21:         <td><%= rent.boatid %></td>
+    22:         &nbsp;
+  app/views/users/my_rents.html.erb:19:in `_app_views_users_my_rents_html_erb___4544825362272564931_70222872736580'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.2ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.7ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:17:56 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRent Load (0.2ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 1]]
+  Rendered users/my_rents.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 309ms (Views: 290.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/my_boats" for ::1 at 2017-11-19 09:18:00 -0600
+Processing by UsersController#my_boats as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoat Load (0.4ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."ownerid" = ?  [["ownerid", 1]]
+  [1m[36mBoatAttachment Load (0.3ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered users/my_boats.html.erb within layouts/application (76.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 366ms (Views: 341.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:18:01 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[35mRent Load (0.3ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 294ms (Views: 292.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/my_boats" for ::1 at 2017-11-19 09:19:10 -0600
+Processing by UsersController#my_boats as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoat Load (0.1ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."ownerid" = ?[0m  [["ownerid", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered users/my_boats.html.erb within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 288ms (Views: 286.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-11-19 09:19:12 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cTTrkGJg6l9qJkY1SoK9EBGZi1GAe1xH6td9EkNtWsDSEFn+IsnJ/T4wOLDXufTSd0qcpzUT+rPUSYur3Fqkkg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-19 09:19:12 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 8
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (11.2ms)
+  Rendered shared/_navbar.html.erb (5.5ms)
+Completed 200 OK in 290ms (Views: 288.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-11-19 09:19:15 -0600
+Processing by RegistrationsController#new as HTML
+  Rendered devise/registrations/_captain.html.erb (22.1ms)
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (99.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 407ms (Views: 379.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-19 09:19:16 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 300ms (Views: 294.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-19 09:19:24 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mm82mYNeKwlvwEXkf2fbBgji9bE5Vw6mnjbxOkk3YnqgfQzW2GTdNusYNqXOrhXoGUnw4tnJrc2Vfan2mqo4UQ==", "user"=>{"email"=>"joeychang0204@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "joeychang0204@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-11-19 14:33:43.168294"], ["current_sign_in_at", "2017-11-19 15:19:24.292519"], ["sign_in_count", 4], ["updated_at", "2017-11-19 15:19:24.293352"], ["id", 2]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 125ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2017-11-19 09:19:24 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 8
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (5.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 273ms (Views: 271.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:19:27 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRent Load (0.2ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 2]]
+  Rendered users/my_rents.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `boatid' for #<Rent:0x007fbc14e894a0>
+Did you mean?  boat_id
+               boat_id=
+               boat_id?
+               boat
+               boat_id_was
+               boat=):
+    18:   <tbody>
+    19:   <% @rents.each do |rent| %>
+    20:       <tr>
+    21:         <td><%= rent.boatid %></td>
+    22:         &nbsp;
+    23:         <td><%= rent.date_required %></td>
+    24:         &nbsp;
+  app/views/users/my_rents.html.erb:21:in `block in _app_views_users_my_rents_html_erb___4544825362272564931_70222890799260'
+  app/views/users/my_rents.html.erb:19:in `_app_views_users_my_rents_html_erb___4544825362272564931_70222890799260'
+
+
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.6ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.7ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:19:37 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRent Load (0.1ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 2]]
+  Rendered users/my_rents.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 269ms (Views: 267.4ms | ActiveRecord: 0.3ms)
+  [1m[35mSQL (2.4ms)[0m  DELETE FROM "rents"
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:19:53 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRent Load (0.1ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 2]]
+  Rendered users/my_rents.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 286ms (Views: 283.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/my_boats" for ::1 at 2017-11-19 09:19:54 -0600
+Processing by UsersController#my_boats as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBoat Load (1.2ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."ownerid" = ?  [["ownerid", 2]]
+  Rendered users/my_boats.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 317ms (Views: 313.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/boats" for ::1 at 2017-11-19 09:19:56 -0600
+Processing by BoatsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered boats/index.html.erb within layouts/application (6.2ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 303ms (Views: 298.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boats/1" for ::1 at 2017-11-19 09:19:59 -0600
+Processing by BoatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mCommontator::Thread Load (0.2ms)[0m  [1mSELECT  "commontator_threads".* FROM "commontator_threads" WHERE "commontator_threads"."commontable_id" = ? AND "commontator_threads"."commontable_type" = ? LIMIT 1[0m  [["commontable_id", 1], ["commontable_type", "Boat"]]
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCommontator::Subscription Load (0.1ms)[0m  [1mSELECT  "commontator_subscriptions".* FROM "commontator_subscriptions" WHERE "commontator_subscriptions"."subscriber_id" = ? AND "commontator_subscriptions"."subscriber_type" = ? AND "commontator_subscriptions"."thread_id" = ?  ORDER BY "commontator_subscriptions"."id" ASC LIMIT 1[0m  [["subscriber_id", 2], ["subscriber_type", "User"], ["thread_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "commontator_comments" WHERE "commontator_comments"."thread_id" = ?  [["thread_id", 1]]
+  Rendered /Users/zaoyuanchang/.rvm/gems/ruby-2.3.4/gems/commontator-4.11.1/app/views/commontator/shared/_thread.html.erb (28.9ms)
+  Rendered boats/show.html.erb within layouts/application (52.7ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+Completed 200 OK in 338ms (Views: 330.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/rent-now-button.png" for ::1 at 2017-11-19 09:19:59 -0600
+
+
+Started GET "/boats/1/rents/new?utf8=%E2%9C%93&available_date=11%2F29%2F2017%2C11%2F30%2F2017&boat%5Bavailable_date%5D=&commit.x=128&commit.y=52&commit=Rent" for ::1 at 2017-11-19 09:20:02 -0600
+Processing by RentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "available_date"=>"11/29/2017,11/30/2017", "boat"=>{"available_date"=>""}, "commit.x"=>"128", "commit.y"=>"52", "commit"=>"Rent", "boat_id"=>"1"}
+  Rendered rents/new.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 298ms (Views: 296.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/rents" for ::1 at 2017-11-19 09:20:10 -0600
+Processing by RentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7iQcXxWyI2KTqbitYbyZDQHrvloDuqEFXJYI5htNfK8k9pWAVKvd1wvXp3YDhDP1E7SppSP0PEOhvVr3QPhzQ==", "with_captain"=>"yes", "available_date"=>"11/29/2017,11/30/2017", "rent"=>{"date_required"=>"11/29/2017,11/30/2017", "comments"=>"rent 1"}, "commit"=>"Confirm Rent"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "rents" ("comments", "date_required", "boat_id", "user_id", "user_name", "approved", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["comments", "rent 1"], ["date_required", "11/29/2017,11/30/2017"], ["boat_id", 1], ["user_id", 2], ["user_name", "Xiao Yu"], ["approved", "f"], ["created_at", "2017-11-19 15:20:10.789482"], ["updated_at", "2017-11-19 15:20:10.789482"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home_page/index
+Completed 302 Found in 8ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/home_page/index" for ::1 at 2017-11-19 09:20:10 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.3ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 8
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (8.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 326ms (Views: 324.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:20:13 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRent Load (0.2ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 2]]
+  Rendered users/my_rents.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.5ms)
+Completed 200 OK in 283ms (Views: 280.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:20:51 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRent Load (0.1ms)[0m  SELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?  [["user_id", 2]]
+  Rendered users/my_rents.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 279ms (Views: 277.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-11-19 09:20:59 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j10C0rNFj908I0xytmBNb2nnc2hSNxsseIGl+hMF1mcIdkj1zkHoJ+pCtA3b6K/Eia4PN662IVljdQiyVmsCWA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-19 09:20:59 -0600
+Processing by HomePageController#index as HTML
+  [1m[35mBoat Load (0.2ms)[0m  SELECT  "boats".* FROM "boats" LIMIT 8
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 2]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 284ms (Views: 283.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-19 09:21:05 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 290ms (Views: 287.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-19 09:21:13 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZkzOI4yOCQQYLllcMwuV1ZdbeoUs6N1+5ojzKrWcGE4cQsOjpgG8f3TuwE4tse/xfNMUZV51riZU5VMNvH7T2Q==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "joeychang70529@yahoo.com.tw"]]
+Completed 401 Unauthorized in 75ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZkzOI4yOCQQYLllcMwuV1ZdbeoUs6N1+5ojzKrWcGE4cQsOjpgG8f3TuwE4tse/xfNMUZV51riZU5VMNvH7T2Q==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 376ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-11-19 09:21:17 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MRHBWB0NryS+ruwLJOIEgXFGMQNxye27sAp+/0YXywJLH8zYN4IaX9JudRk6WH6lms5f4wNUnuMCZ97YT/UAlQ==", "user"=>{"email"=>"joeychang70529@yahoo.com.tw", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "joeychang70529@yahoo.com.tw"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-11-19 14:34:09.509061"], ["current_sign_in_at", "2017-11-19 15:21:17.827709"], ["sign_in_count", 4], ["updated_at", "2017-11-19 15:21:17.828794"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2017-11-19 09:21:17 -0600
+Processing by HomePageController#index as HTML
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT  "boats".* FROM "boats" LIMIT 8[0m
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.1ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.1ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered home_page/index.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 282ms (Views: 280.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/my_rents" for ::1 at 2017-11-19 09:21:19 -0600
+Processing by UsersController#my_rents as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRent Load (0.1ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/my_rents.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 276ms (Views: 273.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/my_boats" for ::1 at 2017-11-19 09:21:21 -0600
+Processing by UsersController#my_boats as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBoat Load (0.2ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."ownerid" = ?[0m  [["ownerid", 1]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 1]]
+  [1m[36mBoatAttachment Load (0.2ms)[0m  [1mSELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mBoatAttachment Load (0.2ms)[0m  SELECT "boat_attachments".* FROM "boat_attachments" WHERE "boat_attachments"."boat_id" = ?  [["boat_id", 3]]
+  Rendered users/my_boats.html.erb within layouts/application (10.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 303ms (Views: 299.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:21:23 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[36mRent Load (0.2ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 288ms (Views: 285.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:23:11 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[36mRent Load (0.1ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.6ms)
+Completed 200 OK in 284ms (Views: 283.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:23:32 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[36mRent Load (0.1ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 284ms (Views: 283.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:23:59 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[36mRent Load (0.1ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (4.2ms)
+Completed 200 OK in 289ms (Views: 287.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boats/1/rents" for ::1 at 2017-11-19 09:24:12 -0600
+Processing by RentsController#index as HTML
+  Parameters: {"boat_id"=>"1"}
+  [1m[36mRent Load (0.1ms)[0m  [1mSELECT "rents".* FROM "rents" WHERE "rents"."boat_id" = ?[0m  [["boat_id", 1]]
+  Rendered rents/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (3.9ms)
+Completed 200 OK in 299ms (Views: 298.3ms | ActiveRecord: 0.2ms)
