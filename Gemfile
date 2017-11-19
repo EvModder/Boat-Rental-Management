@@ -46,6 +46,9 @@ gem 'pundit'
 #for uploading pictures
 #also works for videos https://stackoverflow.com/questions/5463572/upload-video-in-a-rails-application/22566081
 gem 'carrierwave', '~> 0.10.0'
+gem "fog"
+#gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+#gem "fog-aws"
 gem 'mini_magick', '~> 4.3'
 
 

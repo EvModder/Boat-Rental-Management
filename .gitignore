@@ -16,3 +16,6 @@ log/*.*
 # Ignore uploaded files
 /public/uploads/*
 /public/uploads/*.*
+
+*.sqlite3
+*.log
