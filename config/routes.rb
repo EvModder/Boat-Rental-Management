@@ -1,31 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'rents/index'
-
-  get 'rents/show'
-
-  get 'rents/create'
-
-  get 'rents/edit'
-
-  get 'rents/delete'
-
-  get 'rents/new'
-
-  get 'rent/index'
-
-  get 'rent/new'
-
-  get 'rent/show'
-
-  get 'rent/delete'
-
-  get 'rent/edit'
-
   root 'home_page#index'
 
   resources :boat_attachments
-  resources :boats
+  resources :boats do
+    resources :rents
+  end
   #devise_for :users
   get 'home_page/index'
   devise_for :users, :controllers => { registrations: 'registrations' }

@@ -18,6 +18,8 @@ class RentsController < ApplicationController
   def create
     # Instantiate a new object using form parameters
     @rent = Rent.new(rent_params)
+    @rent.boat_id = session[:boat_id]
+    @rent.user_id = current_user.id
     # Save the object
     if @rent.save
       # If save succeeds, redirect to the index action

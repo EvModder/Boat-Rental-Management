@@ -17,6 +17,8 @@ class BoatsController < ApplicationController
   # GET /boats/1.json
   def show
     @boat_attachments = @boat.boat_attachments.all
+    session[:boat_id] = @boat.id
+    session[:boat_available_date] = @boat.available_date
   end
 
   # GET /boats/new

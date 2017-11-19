@@ -3,9 +3,6 @@
 <p>
     <strong>Name:</strong>
     <%= @boat.name %>
-  <i class="rentbutton">
-      <%= link_to image_tag("rent-now-button.png", width: "50%"), {:controller => 'rents', :action => "new" } %>
-      </i>
   </p>
 
 <p>
@@ -47,24 +44,29 @@
 </ul>
 <br><br>
 
-<p class="rentoption">
-  <strong>Hire a Captain?</strong><br>
-  <input type="radio" name="with_captain" value="yes"> Yes
-  <input type="radio" name="with_captain" value="no"> No<br><br>
 
-    <strong>Pick a Date!</strong>
+
+
+<br><br>
+
+<%= form_tag(new_boat_rent_path(@boat), method: "get") do%>
+    <p class="rentoption">
+      <strong>Hire a Captain?</strong><br>
+      <input type="radio" name="with_captain" value="yes"> Yes
+      <input type="radio" name="with_captain" value="no"> No<br><br>
+
+      <strong>Pick a Date!</strong>
 
       <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
 
     <div id="datepicker">
-
     </div>
+    <input type="hidden" id="boat_available_date" name="boat[available_date]">
 
 
-  </p>
-
-
-<br><br>
+    </p>
+     <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
+<% end %>
 
 <p>
    <% if @boat.video_url != nil %>
@@ -73,6 +75,8 @@
    <% end %>
 
   </p>
+
+
 
 <p>
   <%= commontator_thread(@boat) %>

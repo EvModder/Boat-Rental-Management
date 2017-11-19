@@ -3,31 +3,22 @@
 
     <div class="form-group">
       <div class="col-sm-2 control-label">
-            <strong>Hire a Captain?</strong><br>
+        <strong>Hire a Captain?</strong><br>
+      </div>
             <div class="col-sm-6">
-                <input type="radio" name="with_captain" value="yes"> Yes
-                <input type="radio" name="with_captain" value="no"> No<br><br>
+                <input type="radio" name="with_captain" value="yes" checked = <%= params[:with_captain]== "yes" %> > Yes<br>
+                <input type="radio" name="with_captain" value="no" checked = <%= params[:with_captain]== "no" %> >  No<br><br>
             </div>
             </p>
-        </div>
-  </div>
-</br>
+    </div>
+
+    <%= hidden_field_tag "available_date", session[:boat_available_date], { :id => "available-date" } %>
 
     <div class="form-group">
       <%= f.label :Date_Required, class: "col-sm-2 control-label" %>
         <div class="col-sm-6">
             <div id="datepicker">
-            <script type="text/javascript">
-                $('#datepicker').datepicker({multidate:true});
-                $('#datepicker').on('changeDate', function() {
-                    $('#rent_date').val(
-                        $('#datepicker').datepicker('getFormattedDate')
-                    );
-                });
-            </script>
             </div>
-
-            <input type="hidden" id="rent_date" name="rent[date_required]">
 
         </div>
     </div>
