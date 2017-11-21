@@ -24,26 +24,29 @@
                 <%= link_to "Sign Up", new_user_registration_path, class: "bg-primary text-white"%>
             <%end%>
         </span>
-      <span class="navbar-text nav navbar-nav navbar-right">
+        <span class="navbar-text nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <%= link_to "Edit Profile", edit_user_registration_path, class: "bg-primary text-white"%>
+          <%end%>
+        </span>
+        <span class="navbar-text nav navbar-nav navbar-right">
+        </span>
+        
+        <span class="navbar-text nav navbar-nav navbar-right">
           <% if user_signed_in? %>
             <%= link_to "My Rents", users_my_rents_path, class: "bg-primary text-white"%>
           <%end%>
         </span>
-
       <span class="navbar-text nav navbar-nav navbar-right">
           <% if user_signed_in? %>
             <%= link_to "My Boats", users_my_boats_path, class: "bg-primary text-white"%>
           <%end%>
         </span>
-
-
+        
         <span class="navbar-text nav navbar-nav navbar-right">
            <% if !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "bg-primary text-white"%>
            <%end%> 
         </span>
-
-
-
     </div>
 </nav>
