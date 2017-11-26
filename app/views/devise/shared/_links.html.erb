@@ -6,7 +6,7 @@
   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
 <% end -%>
 
-<%- if controller_name = 'sessions' %>
+<%- if controller_name == 'sessions' %>
   <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></br>
 <% end -%>
 
