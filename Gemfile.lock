@@ -303,7 +303,7 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    pg (0.21.0)
+    pg (0.20.0)
     public_suffix (3.0.0)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -445,7 +445,7 @@ DEPENDENCIES
   jquery-rails
   jquery-slick-rails
   mini_magick (~> 4.3)
-  pg
+  pg (= 0.20)
   pundit
   rails (= 4.2.6)
   rails_layout
