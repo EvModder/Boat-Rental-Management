@@ -1,5 +1,5 @@
 # encoding: utf-8
-require 'carrierwave/storage/fog'
+#require 'carrierwave/storage/fog'
 
 class ImageUploader < CarrierWave::Uploader::Base
 
