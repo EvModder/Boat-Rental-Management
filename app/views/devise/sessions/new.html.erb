@@ -1,9 +1,12 @@
-<div class="log-in-page">
-  <div class="log-in-left">
-    <div class="log-in-image">
-    </div>
+<div class="log-in-page row">
+
+  <div class="log-in-left col-sm-6">
+    <%=image_tag("login-page.png", alt: "Example Image", class:"log-in-image")%>
   </div>
-  <div class="log-in-right">
+ <div class="log-in-left col-sm-1">
+
+  </div>
+  <div class="log-in-right col-sm-5">
     <h2>Log in</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -32,13 +35,10 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-2">
-          <%= f.submit "Log in", class:"btn btn-primary"%>
-        </div>
+          <%= f.submit "Log in", class:"btn btn-primary btn-block"%>
       </div>
     <% end %>
-    <div class="log-in-right-lower">
+   
       <%= render "devise/shared/links" %>
-    </div>
   </div>
 </div>
