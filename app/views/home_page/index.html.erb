@@ -1,44 +1,57 @@
-<h1>Welcome to Texas Boat Renting Service! </h1>
+<div class="home-page">
+</div>
+    <div class="search">
+        <div class="seach-text">
+            <h2>your adventure starts here...</h2>
+        </div>
+    <!-- Search Bar Here -->
 
-<div class="clearfix"></div>
+        
+        <%= form_tag(boats_path, :method => "get", id: "search-form", class:"form-inline") do %>
+        
+            <div class="form-group">
+                <select id="states-of-country" class="form-control" name="state">
+                    <option id="no-state" value="" selected>Search By State</option>
 
-<div class="">
-  <!-- Search Bar Here -->
-  <%= form_tag(boats_path, :method => "get", id: "search-form") do %>
-      <select id="states-of-country" name="state">
-        <option id="no-state" value="" selected>Search By State</option>
-
-        /* For states within US */
-        <% CS.states(:us).each do |key, value| %>
-            <option value="<%= value %>" id="<%= key %>"><%= value %></option>
+                    /* For states within US */
+                    <% CS.states(:us).each do |key, value| %>
+                        <option value="<%= value %>" id="<%= key %>"><%= value %></option>
+                    <% end %>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="cities-of-state"  class="form-control" name="city">
+                    <option value="" selected>Search By City</option>
+                </select>
+            
+            </div>
+            <div class="form-group">
+            
+        
+                <div class="input">
+                <%= number_field_tag :capacity, params[:capacity], placeholder: "Search By Capacity", class:"form-control" %>
+                    
+                        <%= submit_tag "Search", class:"btn btn-default" %>
+                
+                </div> 
+            </div>
         <% end %>
-      </select>
+    </div>
 
-      <select id="cities-of-state" name="city">
-        <option value="" selected>Search By City</option>
-      </select>
-      <%= number_field_tag :capacity, params[:capacity], placeholder: "Search By Capacity" %>
-      <%= submit_tag "Search" %>
-  <% end %>
-
-
-
-</div>
-
-<br>
-Feature Boats:
-
-<div class="boat_panel" >
-&nbsp;
-&nbsp;
-  <% @boats.limit(8).each_slice(4).each do |group| %>
-      <% group.each do |boat| %>
-      &nbsp;
-          <% if boat.id !=nil %>
-              <%= link_to image_tag(boat.boat_attachments[0].image.url, height: 200, width: 300,:style => "border: 2px solid white"), boat %>
-          <% end %>
-      <% end %>
-      <br>
-      <br>
-  <% end %>
-</div>
+    <p class="search-clear">
+    Feature Boats:
+    </p>
+    <div class="boat_panel" >
+    &nbsp;
+    &nbsp;
+    <% @boats.limit(8).each_slice(4).each do |group| %>
+        <% group.each do |boat| %>
+        &nbsp;
+            <% if boat.id !=nil %>
+                <%= link_to image_tag(boat.boat_attachments[0].image.url, height: 200, width: 300,:style => "border: 2px solid white"), boat %>
+            <% end %>
+        <% end %>
+        <br>
+        <br>
+    <% end %>
+    </div>

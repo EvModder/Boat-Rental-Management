@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BoatRentalWebsite</title>
+  <title>Rent A Boat</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body>
 
-<%# <%= image_tag("ocean.jpg")%> 
-<div class="background_image"></div>
-<div>
-  <%= render partial: "shared/navbar"%>
+  <%# <%= image_tag("ocean.jpg")%> 
+  <%# <div class="background_image"></div> %>
+    <div class="main">
+      <%= render partial: "shared/navbar"%>
+  
+      <div class="container cont">
+        <% if notice %> <div class="alert alert-info"><%= notice %></div><%end%>
+        <% if alert %><div class="alert alert-warning"><%= alert %></div><%end%>
+        <%= yield %>
+      </div>
+    </div>
 
-  <div class="container">
-    <% if notice %> <div class="alert alert-info"><%= notice %></div><%end%>
-    <% if alert %><div class="alert alert-warning"><%= alert %></div><%end%>
-  </div>
-  <%= yield %>
-</div>
-
-</body>
-<footer class="site_footer">
-  Contact Us 
-</footer>
+  </body>
 </html>

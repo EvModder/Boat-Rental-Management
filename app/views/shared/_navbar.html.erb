@@ -1,52 +1,59 @@
-<nav class="navbar navbar-light bg-primary">
-    <div class="container">
-        
-        <span class="navbar-text">
-            <%= link_to "Home", root_path, class: "bg-primary text-white"%>
-        </span>
+<nav class="navbar navbar-default" style="background-color: #265af3f5">
+    <div class="container-fluid">
 
-        <span class="navbar-text">
-            <%= link_to "Rent Boat", boats_path, class: "bg-primary text-white"%>
-        </span>
+        <div class="navbar-header">
+        <span class="my-navbar-brand">Texas Boat Rental</span>
+        </div>
+        <ul class="nav navbar-nav">
+   
+            <li>
+                <%= link_to "Home", root_path%>
+            </li>
 
-        <span class="navbar-text">
-          <% if user_signed_in? %>
-              <%= link_to "Post Boat", new_boat_path, class: "bg-primary text-white"%>
-          <%else%>
-              <%= link_to "Post Boat", new_user_session_path, class: "bg-primary text-white"%>
-          <%end%>
-        </span>
+            <li>
+                <%= link_to "Rent Boat", boats_path%>
+            </li>
 
-      <span class="navbar-text nav navbar-nav navbar-right">
+            <li>
             <% if user_signed_in? %>
-                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "bg-primary text-white"%>
+                <%= link_to "Post Boat", new_boat_path%>
             <%else%>
-                <%= link_to "Sign Up", new_user_registration_path, class: "bg-primary text-white"%>
+                <%= link_to "Post Boat", new_user_session_path%>
             <%end%>
-        </span>
-        <span class="navbar-text nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-            <%= link_to "Edit Profile", edit_user_registration_path, class: "bg-primary text-white"%>
-          <%end%>
-        </span>
-        <span class="navbar-text nav navbar-nav navbar-right">
-        </span>
-        
-        <span class="navbar-text nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-            <%= link_to "My Rents", users_my_rents_path, class: "bg-primary text-white"%>
-          <%end%>
-        </span>
-      <span class="navbar-text nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-            <%= link_to "My Boats", users_my_boats_path, class: "bg-primary text-white"%>
-          <%end%>
-        </span>
-        
-        <span class="navbar-text nav navbar-nav navbar-right">
-           <% if !user_signed_in? %>
-            <%= link_to "Login", new_user_session_path, class: "bg-primary text-white"%>
-           <%end%> 
-        </span>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <% if user_signed_in? %>
+                    <%= link_to "Logout", destroy_user_session_path, method: :delete%>
+                <%else%>
+            
+                    <%= link_to "Sign Up", new_user_registration_path%>
+                <%end%>
+            </li>
+            <li>
+            <% if user_signed_in? %>
+                <%= link_to "Edit Profile", edit_user_registration_path%>
+            <%end%>
+            </li>
+            
+            
+            <li>
+            <% if user_signed_in? %>
+                <%= link_to "My Rents", users_my_rents_path%>
+            <%end%>
+            </li>
+            <li>
+            <% if user_signed_in? %>
+                <%= link_to "My Boats", users_my_boats_path%>
+            <%end%>
+            </li>
+            
+            <li>
+            <% if !user_signed_in? %>
+                <%= link_to "Login", new_user_session_path%>
+            <%end%> 
+            </li>
+        </ul>
     </div>
 </nav>

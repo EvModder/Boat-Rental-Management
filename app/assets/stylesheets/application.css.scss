@@ -21,9 +21,73 @@
 
  @import "slick";
 
-body {
-	background: #B0C4DE;
+ ul.nav.navbar-nav > li {
+     font-size: 15px;
+ }
+ .navbar-default .navbar-nav > li > a {
+     color: white
+ }
+
+ span.my-navbar-brand {
+    color: white;
+    float: left;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 50px;
+ }
+
+ .navbar {
+     border-radius: 0px !important;
+     border: 0px !important;
+ }
+
+ .container.cont {
+     max-width: 1500px !important;
+ }
+//  .search-clear{
+//     clear: left;
+//  }
+//  .search-state {
+//      padding: 0px !important;
+//  }
+//  .search-city, .search-state  {
+//      padding: 0 5px;
+//      float: left;
+//  }
+
+//  .search-bar {
+//      float: right;
+//  }
+
+h2 {
+  color:  #f5f5f5;
 }
+ .search {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 150px
+ }
+ .form-inline .form-control, .navbar-form .form-control {
+     width: 200px !important;
+ }
+ .home-page {
+    background: url('main-page-boat.jpg');
+    width: 100%;
+    background-size: cover;
+    filter: opacity(80%);
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5000;
+    resize: both;
+    overflow: scroll;
+    // #0062e01c
+    // #3fb72342
+ }
+
 /*body{
     width: auto;
     height: auto;
@@ -42,25 +106,25 @@ body {
     overflow: scroll;
     filter: blur(3px);
 }*/
-html {
-    min-height: 100%;
-    position: relative;
-}
-body {
-    height: 100%;
-    min-height: 100%;
-    padding-bottom: 30px;
-}
-.site_footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    padding: 5px;
-    text-align: center;
-    align-items: center;
-    background-color: #2680c9;
-}
+// html {
+//     min-height: 100%;
+//     position: relative;
+// }
+// body {
+//     height: 100%;
+//     min-height: 100%;
+//     padding-bottom: 30px;
+// }
+// .site_footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     height: 30px;
+//     padding: 5px;
+//     text-align: center;
+//     align-items: center;
+ 
+// }
 
 
 
