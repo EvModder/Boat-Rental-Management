@@ -5,49 +5,51 @@ $( document ).on('turbolinks:load',function()
     var active_date=[];
     var dates = received_dates.split(",");
     var default_year, default_month,default_day;
-    for (index=0; index<dates.length; index++){
-        curdate = dates[index].split("/");
-        if (index==0){
-            default_year= curdate[2];
-            default_month=curdate[0]-1;
-            default_day=curdate[1];
-        }
-        if (curdate[1][0] == '0') {
-            curdate[1] = curdate[1].substr(1);
-        }
-        if (curdate[0][0] == '0') {
-            curdate[0] = curdate[0].substr(1);
-        }
-
-         active_date.push(curdate[1]+"/"+curdate[0]+"/"+curdate[2]);
-    }
-    //var active_dates = ["8/11/2017", "25/11/2017"];
-    $('#datepicker').datepicker(
-        {
-            defaultViewDate: { year: default_year, month: default_month, day: default_day },
-            multidate: true,
-            beforeShowDay: function (date) {
-                var d = date;
-                var curr_date = d.getDate();
-                var curr_month = d.getMonth() + 1; //Months are zero based
-                var curr_year = d.getFullYear();
-                var formattedDate = curr_date + "/" + curr_month + "/" + curr_year
-
-                if ($.inArray(formattedDate, active_date) != -1) {
-                    return {
-                        classes: 'availableDate'
-                    };
-                }
-                else {
-                    return false
-                }
-
+    if (received_dates != ""){
+        for (index = 0; index < dates.length; index++) {
+            curdate = dates[index].split("/");
+            if (index == 0) {
+                default_year = curdate[2];
+                default_month = curdate[0] - 1;
+                default_day = curdate[1];
             }
+            if (curdate[1][0] == '0') {
+                curdate[1] = curdate[1].substr(1);
+            }
+            if (curdate[0][0] == '0') {
+                curdate[0] = curdate[0].substr(1);
+            }
+
+            active_date.push(curdate[1] + "/" + curdate[0] + "/" + curdate[2]);
+        }
+        //var active_dates = ["8/11/2017", "25/11/2017"];
+        $('#datepicker').datepicker(
+            {
+                defaultViewDate: {year: default_year, month: default_month, day: default_day},
+                multidate: true,
+                beforeShowDay: function (date) {
+                    var d = date;
+                    var curr_date = d.getDate();
+                    var curr_month = d.getMonth() + 1; //Months are zero based
+                    var curr_year = d.getFullYear();
+                    var formattedDate = curr_date + "/" + curr_month + "/" + curr_year
+
+                    if ($.inArray(formattedDate, active_date) != -1) {
+                        return {
+                            classes: 'availableDate'
+                        };
+                    }
+                    else {
+                        return false
+                    }
+
+                }
+            });
+        $('#datepicker').on('changeDate', function () {
+            $('#boat_available_date').val(
+                $('#datepicker').datepicker('getFormattedDate')
+            );
         });
-    $('#datepicker').on('changeDate', function () {
-        $('#boat_available_date').val(
-            $('#datepicker').datepicker('getFormattedDate')
-        );
-    });
+    }
 
 })

@@ -6,8 +6,13 @@
         <strong>Hire a Captain?</strong><br>
       </div>
             <div class="col-sm-6">
-                <input type="radio" name="with_captain" value="yes" checked = <%= params[:with_captain]== "yes" %> > Yes<br>
-                <input type="radio" name="with_captain" value="no" checked = <%= params[:with_captain]== "no" %> >  No<br><br>
+              <% if params[:with_captain]== "yes" %>
+                <input type="radio" name="with_captain" value="yes" checked="checked" > Yes<br>
+                <input type="radio" name="with_captain" value="no"  %>   No<br><br>
+              <% else %>
+                <input type="radio" name="with_captain" value="yes"  > Yes<br>
+                <input type="radio" name="with_captain" value="no"  checked="checked">   No<br><br>
+               <% end %>
             </div>
             </p>
     </div>

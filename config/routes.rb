@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get 'users/my_boats' => "users#my_boats"
   get 'users/my_rents' => "users#my_rents"
 
+  get 'rents/confirm' => "rents#confirm"
+
   
 
   get 'cities/:state', to: 'application#cities'
