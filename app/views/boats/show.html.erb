@@ -55,17 +55,21 @@
       <input type="radio" name="with_captain" value="yes"> Yes
       <input type="radio" name="with_captain" value="no"> No<br><br>
 
-      <strong>Pick a Date!</strong>
+
+      <strong>Available Date:</strong>
+      <% if @boat.available_date != "" %>
+          <%= @boat.available_date %>
+      <% else %>
+          no available date
+      <% end %>
 
       <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
 
-    <div id="datepicker">
-    </div>
-    <input type="hidden" id="boat_available_date" name="boat[available_date]">
-
 
     </p>
-     <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
+    <% if @boat.available_date != "" %>
+      <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
+    <% end %>
 <% end %>
 
 <p>

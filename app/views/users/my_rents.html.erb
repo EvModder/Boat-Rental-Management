@@ -8,9 +8,7 @@
     <th>Boat id</th>
     &nbsp;
     <th>required_date</th>
-    &nbsp;
-    <th>approved?</th>
-    &nbsp;
+
     <th colspan="3"></th>
   </tr>
   </thead>
@@ -22,8 +20,6 @@
         &nbsp;
         <td><%= rent.date_required %></td>
         &nbsp;
-        <td><%= rent.approved %></td>
-        &nbsp;
       </tr>
   <% end %>
   <p>
@@ -33,5 +29,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Boat', new_boat_path %>
