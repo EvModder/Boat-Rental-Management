@@ -24,42 +24,26 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <% if user_signed_in? %>
-                    <%= link_to "Logout", destroy_user_session_path, method: :delete%>
-                <%else%>
-            
+                <% if !user_signed_in? %>
                     <%= link_to "Sign Up", new_user_registration_path%>
                 <%end%>
             </li>
-            <li>
-            <% if user_signed_in? %>
-                <%= link_to "Edit Profile", edit_user_registration_path%>
-            <%end%>
-            </li>
-            
-            
-            <li>
-            <% if user_signed_in? %>
-                <%= link_to "My Rents", users_my_rents_path%>
-            <%end%>
-            </li>
-            <li>
-            <% if user_signed_in? %>
-                <%= link_to "My Boats", users_my_boats_path%>
-            <%end%>
-            </li>
 
+
+          <% if user_signed_in? %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
+              My Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li><%= link_to "My Rents", users_my_rents_path%></li>
               <li> <%= link_to "My Boats", users_my_boats_path%></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete%></li>
               <li class="divider"></li>
             </ul>
           </li>
+          <% end %>
             
             <li>
             <% if !user_signed_in? %>

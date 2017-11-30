@@ -76,8 +76,15 @@
           <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
 
         <div id="datepicker">
+          <script type="text/javascript">
+              $('#datepicker').on('changeDate', function() {
+                  $('#boat_chosen_date').val(
+                      $('#datepicker').datepicker('getFormattedDate')
+                  );
+              });
+          </script>
         </div>
-        <input type="hidden" id="boat_available_date" name="boat[available_date]">
+        <input type="hidden" id="boat_chosen_date" name="chosen_date">
 
         <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
         </p>
