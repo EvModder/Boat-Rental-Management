@@ -17,3 +17,4 @@
 //= require jquery.slick
 //= require bxslider
 //= require bootstrap-datepicker
+//= require bootstrap

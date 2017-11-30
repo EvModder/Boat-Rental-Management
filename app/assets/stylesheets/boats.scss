@@ -2,14 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.bx-wrapper{
-  margin:0 !important;
 
+
+//.bx-wrapper, .bx-viewport, .bx-wrapper, .bxslider {height: 300px !important;}
+
+.bx-viewport {
+  height: 250px !important;
 }
-
-.bx-wrapper, .bx-viewport, .bx-wrapper, .bxslider {height: 300px !important;}
-
-
 
 .availableDate{
   background: #fffd30;
@@ -18,14 +17,35 @@
 .notAvailableDate{
   background: #ff2d28;
 }
-
-.rentbutton{
-  position:absolute;
-  top: 600px;
-  left: 300px;
+.media-post-page {
+  width: 800px;
+  margin: auto;
 }
-th, td {
-    padding: 15px;
-    border-spacing: 5px;
-    border-bottom:1pt solid black;
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.post-page-table
+td {
+  border-top: none !important;
+  vertical-align: middle !important;
+  padding: 1px !important;
+  width: 200px !important;
+}
+// .images-post-page, .video-post-page {
+//   float: left
+// }
+.rentbutton{
+  top: 80%;
+  left: -100%;
+  width: 35%;
+}
+//th, td {
+//    padding: 15px;
+//    border-spacing: 5px;
+//    border-bottom:1pt solid black;
+//}
+.post-page-lower {
+  margin-top: 25px;
 }
