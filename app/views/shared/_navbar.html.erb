@@ -35,12 +35,11 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               My Account <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" col-xs-12>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li><%= link_to "My Rents", users_my_rents_path%></li>
               <li> <%= link_to "My Boats", users_my_boats_path%></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete%></li>
-              <li class="divider"></li>
             </ul>
           </li>
           <% end %>
