@@ -31,7 +31,9 @@
 <h2>Sign up</h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
 <%= devise_error_messages! %>
-
+  
+<div style="flex-wrap: wrap">
+  <div style="flex-grow: 1;">
     <div class="form-group">
       <%= f.label :first_name, class: "col-sm-2 control-label" %>
       <div class="col-sm-6">
@@ -112,7 +114,8 @@
       </div>
     </div>
     </br>
-
+  </div>
+  <div style="flex-grow: 1;">
     <div class="form-group">
       <%= f.label :isCaptain, class: "col-sm-2 control-label" %>
       <div class="col-sm-6" id="myinput">
@@ -122,9 +125,9 @@
       <div class="col-sm-6" id="panel">
         <%= render(:partial => 'captain', :locals => {:s => f}) %>
       </div>
-        
-      
     </div>
+  </div>
+</div>
     </br>
 
     <div class="form-group">
