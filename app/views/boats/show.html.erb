@@ -1,91 +1,95 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-    <strong>Name:</strong>
-    <%= @boat.name %>
-  </p>
+<div class="media-post-page">
 
-<p>
-    <strong>Owner:</strong>
-    <%= @boat.owner_name %>
-  </p>
-
-<p>
-  <strong>Width:</strong><%= @boat.width %>ft. <strong>Depth:</strong><%= @boat.depth %>ft. <strong>Height:</strong><%= @boat.height %>ft.
-</p>
-
-<p>
-  <strong>Driven in:</strong>
-  <%= @boat.water %>
-</p>
-
-<p>
-  <strong>Capcity:</strong>
-  <%= @boat.capacity %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @boat.state %>
-  <strong>City:</strong>
-  <%= @boat.city %>
-</p>
-
-
-<p>
-    <strong>Description:</strong>
-    <%= @boat.description %>
-  </p>
-
-<ul class="bxslider" >
-  <% @boat_attachments.each do |p| %>
-      <li><%= image_tag p.image_url%></li>
-  <% end %>
-</ul>
-<br><br>
-
-
-
-
-<br><br>
-
-<%= form_tag(new_boat_rent_path(@boat), method: "get") do%>
-    <p class="rentoption">
-      <strong>Hire a Captain?</strong><br>
-      <input type="radio" name="with_captain" value="yes"> Yes
-      <input type="radio" name="with_captain" value="no"> No<br><br>
-
-
-      <strong>Available Date:</strong>
-      <% if @boat.available_date != "" %>
-          <%= @boat.available_date %>
-      <% else %>
-          no available date
-      <% end %>
-
-      <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
-
-
-    </p>
-    <% if @boat.available_date != "" %>
-      <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
+  <ul class="bxslider" >
+    <% @boat_attachments.each do |p| %>
+        <li><%= image_tag p.image_url%></li>
     <% end %>
-<% end %>
+    <% if @boat.video_url != nil %>
+        <li><%= video_tag @boat.video_url.to_s, :controls =>true %></li>
+    <% end %>
+  </ul>
+</div>
 
-<p>
-   <% if @boat.video_url != nil %>
-    <strong>Video:</strong><br/>
-    <%= video_tag @boat.video_url.to_s, :controls =>true %>
-   <% end %>
+<div class="row">
+  <div class="col-xs-2">
+  </div>
+  <div class="col-xs-5">
+    <table class="post-page-table">
+      <tbody>
+      <tr>
+        <td><strong>Name:</strong></td>
+        <td><%= @boat.name %></td>
+      </tr>
+      <tr>
+        <td><strong>Owner:</strong></td>
+        <td><%= @boat.owner_name %></td>
+      </tr>
 
-  </p>
+      <tr>
+        <td><strong>Dimensions:</td>
+        <td>
+          <%= @boat.width %> X
+          <%= @boat.depth %> X
+          <%= @boat.height %> ft.
+
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Driven in:</strong></td>
+        <td><%= @boat.water %></td>
+      </tr>
+
+      <tr>
+        <td><strong>Capacity:</strong></td>
+        <td><%= @boat.capacity %></td>
+      </tr>
+
+      <tr>
+        <td><strong>State:</strong></td>
+        <td><%= @boat.state %></td></tr>
+      <tr><td><strong>City:</strong></td>
+        <td><%= @boat.city %></td>
+      </tr>
+
+
+      <tr>
+        <td><strong>Description:</strong></td>
+        <td><%= @boat.description %></td>
+      </tr>
+      </tbody>
+    </table>
 
 
 
-<p>
+  </div>
+
+
+  <div class="col-xs-5">
+    <%= form_tag(new_boat_rent_path(@boat), method: "get") do%>
+        <p class="rentoption">
+
+          <strong>Dates Available </strong>
+
+          <%= hidden_field_tag "available_date", @boat.available_date, { :id => "available-date" } %>
+
+        <div id="datepicker">
+        </div>
+        <input type="hidden" id="boat_available_date" name="boat[available_date]">
+
+        <%= submit_tag("Rent", :type => :image, :src => "/assets/rent-now-button.png", :class => "rentbutton", :width => "15%") %>
+        </p>
+
+    <% end %>
+  </div>
+</div>
+
+<div class="post-page-lower">
   <%= commontator_thread(@boat) %>
   <% if @boat.ownerid==current_user.id %>
       <%= link_to 'Edit', edit_boat_path(@boat) %> |
-      <% end %>
+  <% end %>
   <%= link_to 'Back', boats_path %>
-  </p>
+</div>
