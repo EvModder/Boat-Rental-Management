@@ -5,9 +5,9 @@ $( document ).on('turbolinks:load',function()
     var index, curdate;
     var active_date=[];
     var chosen_date=[];
-    var dates = received_dates.split(",");
     var default_year, default_month,default_day;
-    if (received_dates != ""){
+    if (received_dates != undefined){
+        var dates = received_dates.split(",");
         for (index = 0; index < dates.length; index++) {
             curdate = dates[index].split("/");
             if (index == 0) {
