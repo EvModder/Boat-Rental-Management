@@ -10,59 +10,65 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  
+<div style="display:flex; flex-wrap: wrap;">
+  <div style="flex-grow: 7;">
+  <div style="display:flex; flex-wrap: wrap;">
+    <div class="field" style="padding-right: 2%;">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field" style="padding-right: 2%;">
+      <%= f.label :price %><br>
+      <%= f.text_field :price %>
+    </div>
+    <div class="field">
+      <%= f.label :capacity, 'Passenger capacity' %><br>
+      <%= f.number_field :capacity %>
+    </div>
   </div>
   <div class="field">
     <%= f.label :size %><br>
     <%= f.number_field :width, :placeholder => 'width' %>ft.  <%= f.number_field :depth, :placeholder => 'depth' %>ft. <%= f.number_field :height, :placeholder => 'height' %>ft.
   </div>
+  <div style="display: flex; flex-wrap: wrap;">
+    <div class="field" style="padding-right: 2%;">
+      <%= f.label :location, 'Location' %><br>
+      <%= f.text_field :location %>
+    </div>
+    
+    <div style="margin-top:28px;padding-right: 2%;">
+    <select id="states-of-country" name="boat[state]">
+      <option id="no-state" value="">Select Your State</option>
+
+      /* For states within US */
+      <% CS.states(:us).each do |key, value| %>
+          <option value="<%= value %>" id="<%= key %>"
+          <% if value == @boat.state %> selected<% end %>><%= value; %></option>
+      <% end %>
+      @shippings = Shipping.where(:active => 1)
+    </select></div>
+
+    <div style="margin-top:28px;">
+    <select id="cities-of-state" name="boat[city]" required>
+      <option value="" selected>Select Your City</option>
+    </select></div>
+  </div>
   <div class="field">
     <%= f.label :water, 'Driven in' %><br>
     <%= f.select(:water, [ "salt water", "fresh water"] ) %>
   </div>
-  <div class="field">
-    <%= f.label :capacity, 'Passenger capacity' %><br>
-    <%= f.number_field :capacity %>
-  </div>
-  <div class="field">
+ 
+  <div class="field" style="width: 50%;">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
   <%= f.hidden_field :ownerid%>
   <%= f.hidden_field :owner_name%>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
+</div>
+<div style="flex-grow: 6;">
 
-
-
-
-    <div class="field">
-      <%= f.label :location, 'Location' %><br>
-      <%= f.text_field :location %>
-    </div>
-
-    <select id="states-of-country" name="boat[state]">
-      <option id="no-state" value="" selected>Select Your State</option>
-
-      /* For states within US */
-      <% CS.states(:us).each do |key, value| %>
-          <option value="<%= value %>" id="<%= key %>"><%= value %></option>
-      <% end %>
-    </select>
-
-    <select id="cities-of-state" name="boat[city]" required>
-      <option value="" selected>Select Your City</option>
-    </select>
-
-
-
-    <br><br>
-    <%= f.label :available_date %><br>
+    <div><%= f.label :available_date %><br></div>
     <div id="datepicker">
       <script type="text/javascript">
           $('#datepicker').datepicker({multidate:true});
@@ -75,8 +81,10 @@
     </div>
     <input type="hidden" id="boat_available_date" name="boat[available_date]">
 
+</div>
+</div>
 
-
+<div style="display: flex; flex-wrap: wrap">
   <%= f.fields_for :boat_attachments do |p| %>
     <div class="field">
       <%= p.label :image %><br>
@@ -88,8 +96,9 @@
     <%= f.label :video %><br>
     <%=f.file_field :video%>
   </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+<br>
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>
