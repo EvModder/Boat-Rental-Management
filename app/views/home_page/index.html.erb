@@ -50,7 +50,7 @@
         <% group.each do |boat| %>
         &nbsp;
             <% if boat.id !=nil %>
-                <%= link_to image_tag(boat.boat_attachments[0].image.url, height: 200, width: 300,:style => "border: 2px solid white"), boat %>
+                <%= link_to image_tag(boat.file_link.split(',')[0], height: 200, width: 300,:style => "border: 2px solid white"), boat %>
             <% end %>
         <% end %>
         <br>

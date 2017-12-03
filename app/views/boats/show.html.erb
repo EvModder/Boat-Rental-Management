@@ -5,11 +5,14 @@
     <% @boat_attachments.each do |p| %>
         <li><%= image_tag p, :controls =>true%></li>
     <% end %>
-    <% if @boat.video_link != nil %>
-        <li><%= video_tag @boat.video_link.to_s, :autoplay => "autoplay", :loop=>"loop" %></li>
+    <% if @boat.video_link != "" %>
+        <li><video width="320" height="240" controls>
+          <source src=<%= @boat.video_link.to_s%> type="video/mp4" autoplay="autoplay" loop="loop">
+        </video></li>
     <% end %>
   </ul>
 </div>
+
 
 <div class="row">
   <div class="col-xs-2">
