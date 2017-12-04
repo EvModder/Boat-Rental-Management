@@ -1,4 +1,4 @@
-<%= form_for(@boat) do |f| %>
+<%= form_for(@boat, html: { class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
   <% if @boat.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@boat.errors.count, "error") %> prohibited this boat from being saved:</h2>
@@ -96,9 +96,11 @@
     <%= f.label :video %><br>
     <%=f.file_field :video%>
   </div>
-</div>
-<br>
-<div class="actions">
-  <%= f.submit %>
-</div>
+
+    <input type="hidden" id="file_position" name="boat[file_position]">
+    <input type="hidden" id="video_position" name="boat[video_position]">
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>

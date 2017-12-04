@@ -1,16 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <div class="media-post-page">
-
   <ul class="bxslider" >
     <% @boat_attachments.each do |p| %>
-        <li><%= image_tag p.image_url%></li>
+        <li><%= image_tag p, :controls =>true%></li>
     <% end %>
-    <% if @boat.video_url != nil %>
-        <li><%= video_tag @boat.video_url.to_s, :controls =>true %></li>
+    <% if @boat.video_link != "" %>
+        <li><video width="320" height="240" controls>
+          <source src=<%= @boat.video_link.to_s%> type="video/mp4" autoplay="autoplay" loop="loop">
+        </video></li>
     <% end %>
   </ul>
 </div>
+
 
 <div class="row">
   <div class="col-xs-2">

@@ -67,6 +67,11 @@ gem 'commontator', '~> 4.11.1'
 #for selecting cities/states
 gem 'city-state'
 
+#image uploading to Amazon S3
+gem 'aws-sdk', '~> 2'
+gem 'dotenv-rails'
+gem 'puma'
+
 
 
 

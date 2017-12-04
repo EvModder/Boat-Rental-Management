@@ -7,7 +7,7 @@
 //.bx-wrapper, .bx-viewport, .bx-wrapper, .bxslider {height: 300px !important;}
 
 .bx-viewport {
-  height: 250px !important;
+  height: 365px !important;
 }
 
 .availableDate{
@@ -48,4 +48,16 @@ td {
 //}
 .post-page-lower {
   margin-top: 25px;
+}
+
+.progress {
+  max-width: 600px;
+  margin:    0.2em 0 0.2em 0;
+}
+
+.progress .bar {
+  height:  1.2em;
+  padding-left: 0.2em;
+  color:   white;
+  display: none;
 }

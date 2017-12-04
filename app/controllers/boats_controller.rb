@@ -1,5 +1,6 @@
 class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :edit, :update, :destroy, :remove_image]
+  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
   before_filter :authenticate_user!
 
   # GET /boats
@@ -16,7 +17,8 @@ class BoatsController < ApplicationController
   # GET /boats/1
   # GET /boats/1.json
   def show
-    @boat_attachments = @boat.boat_attachments.all
+    #@boat_attachments = @boat.boat_attachments.all
+    @boat_attachments = @boat.file_link.split(',')
     session[:boat_id] = @boat.id
     session[:boat_available_date] = @boat.available_date
   end
@@ -40,7 +42,11 @@ class BoatsController < ApplicationController
     @boat = Boat.new(boat_params)
     @boat.owner_name = current_user.first_name + ' ' + current_user.last_name
     @boat.ownerid = current_user.id
+    @boat.file_link = params[:boat][:file_position]
+    @boat.video_link = params[:boat][:video_position]
+
     respond_to do |format|
+
       if @boat.save
         params[:boat_attachments]['image'].each do |a|
           @boat_attachment = @boat.boat_attachments.create!(:image => a)
@@ -54,6 +60,7 @@ class BoatsController < ApplicationController
         format.json { render json: @boat.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /boats/1
@@ -89,5 +96,9 @@ class BoatsController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def boat_params
     params.require(:boat).permit(:ownerid, :name, :width, :depth, :height, :water, :capacity, :state, :city, :description, :available_date, :price, :location, :video, boat_attachments_attributes: [:id, :boat_id, :image])
+  end
+
+  def set_s3_direct_post
+    @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
   end
 end
