@@ -1,3 +1,3 @@
-CSCE 606 - boat-rental-management
+## CSCE 606 - boat-rental-management
 
-An online marketplace for boat owners, renters and captains. 
+An online marketplace for boat owners, renters, and captains. 
